@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La troisième expédition</title>
+	 <link rel="stylesheet" href="./jquery-ui.css">
+       <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="audio.css">
+        	<link rel="stylesheet" href="styles.css">
+    	<link rel="stylesheet" href="aos.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+    <span id="circle" class="circle"></span>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="sun-moon" class="switch-container">
+  <div class="switch"></div>
+</div>
+  <a href="#">Début</a>
+  <a href="#audioplayer">Audio</a>
+  <a href="#vid">2001, l'odyssée de l'espace</a>
+  <a href="#img-2">Déserteurs !</a>
+    <a href="javascript:window.print()">Imprimer</a>
+  <!-- Draggable DIV -->
+<div id="postit" contenteditable="true"><button id="addbutton" contenteditable="false">+</button>
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="postitheader" contenteditable="false">Notes de lecture <input id="delete" contenteditable="false" type="button" value="✕" onClick="removeElement('postit','postit');"></div>
+  <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</div>
+
+</div>
+<!-- Use any element to open the sidenav -->
+<span class="menu" style="cursor: pointer;" onclick="openNav()">Outils de lecture</span>
+<span class="hautpage"  onclick="location.href='#';" style="cursor: pointer;" > &#8613;</span>
+<div class="bandeau">
+<a href="index.html"><h2>Revue_anticipée</h2></a>
+</div>
+<h1>Avril 2031, La troisième expédition</h1>
+<p><em>Par Ray BRADBURY</em></p>
+
+
+<div class="toc">
+
+
+<section class="chapter" id="chapter-1">
+</section>
+
+<h2>  </h2>
+<audio id="music" preload="true">
+    <source src="audio/01.mp3">
+    <source src="audio/01.ogg">
+  </audio>
+
+  <div id="wrapper">
+    <!--Audio Player Interface-->
+    <div id="audioplayer">
+      <button id="pButton" class="play"></button>
+      <div id="timeline">
+        <div id="playhead"></div>
+      </div>
+    </div>
+  </div>
+<center id="image" class="image">
+  <video id="vid" data-aos="fade-down" alt="Scène avec Dave et HAL9000 «I’m sorry Dave, I’m afraid I can’t do that», 2001, l’odyssée de l’espace, Stanley Kubrick" width="640" height="360" playsinline autoplay muted loop> <source src="img/2001_odissey_space.mp4"  type="video/mp4">> </video>
+    <img class="img-1-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-01.jpg">
+<img class="img-2-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-02.jpg">
+<img class="img-3-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-03.jpg">
+<img class="img-4-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-04.jpg">
+<img class="img-5-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-05.jpg">
+<img class="img-6-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-06.jpg">
+<img class="img-7-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-07.jpg">
+<img class="img-8-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-08.jpg">
+<img class="img-9-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-09.jpg">
+<img class="img-10-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-10.jpg">
+<img class="img-11-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-11.jpg">
+<img class="img-12-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-12.jpg">
+<img class="img-13-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-13.jpg">
+<img class="img-14-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-14.jpg">
+<img class="img-15-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-15.jpg">
+<img class="img-16-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-16.jpg">
+<img class="img-17-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-18.jpg">
+<img class="img-18-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-19.jpg">
+ <img class="img-19-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-20.jpg">
+<img class="img-20-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-21.jpg">
+<img class="img-21-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-22.jpg">
+<img class="img-22-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-23.jpg">
+<img id="img-2" class="img-23-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-24.jpg">
+<img class="img-24-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-25.jpg">
+<img class="img-25-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-26.jpg">
+<img class="img-26-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-27.jpg">
+<img class="img-27-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-28.jpg">
+<img class="img-28-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-29.jpg">
+<img class="img-29-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-30.jpg">
+<img class="img-30-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-31.jpg">
+<img class="img-31-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-32.jpg">
+<img class="img-32-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-33.jpg">
+<img class="img-33-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-34.jpg">
+<img class="img-34-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-35.jpg">
+<img class="img-35-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-36.jpg">
+<img class="img-36-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-37.jpg">
+<img class="img-36-2" data-aos="fade-right" alt="Spatiorama, Bruno Persat" src="img/spatiorama-38.jpg">
+<img class="img-36-2" data-aos="fade-left" alt="Spatiorama, Bruno Persat" src="img/spatiorama-39.jpg">
+</center>
+
+
+
+  <h3 style="text-align:center;"><a href="https://mrmondialisation.org/effondrement-de-la-civilisation-une-bonne-chose-pour-la-planete-vraiment/" target="_blank">« Effondrement »</a></h3>
+<section class="chapter" id="chapter-2"><p>Le vaisseau entamait sa descente. Il venait des étoiles, des noires vélocités, des rayonnements mouvants et des golfes <span style="background-color: #ffff66; color: black;">silencieux</span> de l’espace. C’était un nouveau vaisseau ; il contenait du feu dans ses entrailles et des hommes dans ses cellules de métal, et il se déplaçait, leste et fringant, dans un silence impeccable. Il transportait dix-sept hommes, dont un capitaine. La foule réunie sur l’aire de lancement de l’Ohio avait poussé des acclamations et agité les mains dans le soleil, et la fusée avait craché d’immenses fleurs de chaleur et de couleur avant de s’enfoncer dans l’espace pour le troisième voyage à destination de Mars !
+À présent elle réduisait sa vitesse de toute l’efficacité de son métal dans les couches supérieures de l’atmosphère martienne. N’ayant rien perdu de sa beauté ni de sa puissance. Elle avait traversé les eaux ténébreuses de l’espace comme un pâle léviathan ; elle avait dépassé la vieille lune et s’était lancée dans une succession de néants. Chacun son tour, ses passagers avaient été malmenés, ballottés, pris de nausée, rendus à la santé. L’un d’eux était mort, mais maintenant les seize survivants, l’œil clair, le visage plaqué aux hublots massifs, regardaient Mars foncer vers eux.
+<blockquote>« Mars ! s’écria le navigateur Lustig.</blockquote>
+<blockquote>— Cette bonne vieille Mars ! s’exclama Samuel Hinkston, l’archéologue.</blockquote>
+<blockquote>— Ça alors », dit le capitaine John Black.</blockquote>
+La fusée se posa sur une pelouse de gazon vert. Tout près, dans l’herbe, se dressait une biche en fer. Un peu plus loin s’élevait une grande maison brune de style victorien, paisible dans le soleil, surchargée d’ornements rococo, aux fenêtres arborant des carreaux multicolores, bleus, roses, jaunes et verts. La terrasse couverte était fleurie de géraniums duveteux et une vieille balancelle accrochée au plafond oscillait doucement sous la brise. Au faîte de la maison s’érigeait une coupole avec des vitraux en losange et un toit en poivrière ! Par la fenêtre de façade on pouvait apercevoir, reposant sur un pupitre, un morceau de musique intitulé Mon bel Ohio.
+Autour de la fusée, dans quatre directions, s’étendait la petite ville, verdoyante et immobile dans le printemps martien. Il y avait des maisons blanches, d’autres en brique rouge, et de grands arbres, ormes, érables, marronniers, qui bruissaient dans le vent. Et des églises pourvues de campaniles où dormaient des cloches dorées.
+Voilà ce que virent les occupants de la fusée quand ils regardèrent dehors. Puis ils se dévisagèrent et s’absorbèrent de nouveau dans la <span style="background-color: #ffff66; color: black;">contemplation</span> du paysage. Ils se tenaient par les coudes, soudain incapables de respirer, semblait-il. Puis ils pâlirent.
+
+<blockquote>« Le diable m’emporte, murmura Lustig en se frottant la figure, les doigts tout engourdis. Le diable m’emporte.</blockquote>
+<blockquote>— Ce n’est pas possible, dit Samuel Hinkston.</blockquote>
+<blockquote>— Seigneur ! » s’exclama le capitaine John Black.</blockquote>
+Là-dessus arriva un appel du chimiste. « Capitaine, l’atmosphère est plutôt raréfiée. Mais il y a assez d’oxygène. On ne risque rien.</blockquote>
+<blockquote>— Alors on va sortir, dit Lustig.</blockquote>
+<blockquote>— Attendez, fit le capitaine. Comment savoir à quoi nous avons affaire ?</blockquote>
+<blockquote>— C’est une petite ville où l’air est raréfié mais respirable, capitaine.</blockquote>
+<blockquote>— Et une petite ville identique à celles de la Terre, ajouta Hinkston, l’archéologue. Incroyable. C’est impossible, mais c’est comme ça. »</blockquote>
+Le capitaine Black lui jeta un coup d’œil nonchalant. <blockquote>« Pensez-vous que les civilisations de deux planètes puissent progresser au même rythme et évoluer de la même façon, Hinkston ?</blockquote>
+<blockquote>— Je m’en serais bien gardé, capitaine. »</blockquote>
+Black se tenait près du hublot. <blockquote>« Regardez-moi ça. Les géraniums. Une plante bien spécialisée. Cette variété particulière n’est connue sur Terre que depuis cinquante ans. Pensez aux millénaires que requiert l’évolution des plantes. Et dites-moi s’il est logique que les Martiens possèdent : un, des fenêtres à vitraux ; deux, des coupoles ; trois, des balancelles ; quatre, un instrument qui ressemble à un piano et en est probablement un ; et cinq, si vous regardez attentivement dans cette lunette télescopique, est-il logique qu’un compositeur martien ait écrit un morceau de musique intitulé, assez étrangement, Mon bel Ohio ?
+Tout cela signifierait qu’il existe un fleuve du nom d’Ohio sur Mars !</blockquote>
+<blockquote>— Le capitaine Williams, bien sûr ! s’écria Hinkston.</blockquote>
+<blockquote>— Quoi ?</blockquote>
+<blockquote>— Le capitaine Williams et ses trois hommes d’équipage ! Ou Nathaniel York et son compagnon. Ça expliquerait tout !</blockquote>
+<blockquote>— Ça n’explique rien du tout. Selon toute probabilité, l’expédition York a explosé le jour où elle a touché Mars, entraînant la mort de York et de son compagnon. Quant à Williams et ses trois hommes, leur <span style="background-color: #ffff66;  color: black;">vaisseau</span> a explosé le lendemain de leur arrivée. En tout cas, leur radio a cessé d’émettre à ce moment-là, d’où notre supposition que s’ils avaient survécu, ils nous auraient contactés. Et de toute façon, l’expédition York ne remonte qu’à un an, et le capitaine Williams et ses hommes n’ont atterri ici qu’en août dernier. En admettant qu’ils soient encore en vie, auraient-ils pu, même avec l’aide d’une race martienne particulièrement douée, édifier une ville pareille et la vieillir en si peu de temps. Regardez-moi ça ; ça fait bien soixante-dix ans que cette ville est là. Regardez le bois des montants d’escalier ; regardez les arbres, tous centenaires ! Non, ce n’est l’œuvre ni de York ni de Williams. Il s’agit d’autre chose. Ça ne me plaît pas, et je ne quitterai pas le vaisseau avant d’en avoir le cœur net.</blockquote>
+<blockquote>— D’ailleurs, fit Lustig en approuvant de la tête, Williams et ses hommes, tout comme York, se sont posés sur l’autre face de Mars. Nous avons pris grand soin d’atterrir sur ce côté-ci.</blockquote>
+<blockquote>— Excellente remarque. Juste au cas où une tribu locale de Martiens hostiles aurait tué York et Williams, nous avions instruction de nous poser dans une autre région pour éviter que ne se reproduise un tel désastre. Nous sommes donc, en principe, sur un sol que Williams et York n’ont jamais vu.</blockquote>
+<blockquote>— Bon sang ! s’exclama Hinkston. Je veux aller voir cette ville de près, capitaine, si vous le permettez. Il se peut qu’il existe des modes de pensée, des courbes de civilisation identiques sur toutes les planètes de notre système solaire. Il se peut que nous soyons au seuil de la plus grande découverte psychologique et métaphysique de notre époque !</blockquote>
+<blockquote>— Je reste partisan d’attendre un moment, s’obstina Black.</blockquote>
+<blockquote>— Peut-être sommes-nous en présence d’un phénomène qui, pour la première fois, prouverait irréfutablement l’existence de Dieu, capitaine.</blockquote>
+<blockquote>— Beaucoup de personnes ont une foi solide sans avoir besoin d’une telle preuve, Mr. Hinkston.</blockquote>
+<blockquote>— Je fais partie du nombre, capitaine. Mais une ville comme celle-ci ne saurait se passer d’une <span style="background-color: #ffff66; color: black;">intervention divine</span>. Cette précision dans le détail. Elle m’inspire de tels sentiments que je ne sais pas si je dois rire ou pleurer.</blockquote>
+<blockquote>— Dans ce cas, ne faites ni l’un ni l’autre jusqu’à ce que nous sachions ce que nous affrontons.</blockquote>
+<blockquote>— Affrontons ? intervint Lustig. Nous n’affrontons rien, capitaine. C’est là une gentille petite ville, tranquille et verdoyante, qui ressemble beaucoup à la bourgade vieillotte où je suis né. Elle me plaît bien.</blockquote>
+<blockquote>— Quand êtes-vous né, Lustig ?</blockquote>
+<blockquote>— En 1980, capitaine.</blockquote>
+<blockquote>— Et vous, Hinkston ?</blockquote>
+<blockquote>— En 1985, capitaine. À Grinnell, dans l’Iowa. Et j’ai l’impression d’être ici chez moi.</blockquote>
+<blockquote>— Hinkston, Lustig, je pourrais être votre père à tous les deux. J’ai exactement quatre-vingts ans. Je suis né en 1950, dans l’Illinois, et par la grâce de Dieu et d’une science qui, depuis cinquante ans, sait comment faire retrouver la jeunesse à certains vieillards, me voici sur Mars, pas plus fatigué que vous autres, mais infiniment plus méfiant. Cette ville a l’air tout à fait paisible et accueillante, et tellement semblable à Green Bluff, Illinois, que ça me fait peur. Elle ressemble trop à Green Bluff. » Il se tourna vers le radio. « Appelez la Terre. Dites-leur que nous avons touché le sol de Mars. C’est tout. Dites-leur que nous transmettrons un rapport complet demain.</blockquote>
+<blockquote>— Bien, capitaine. »</blockquote>
+Black approcha du hublot un visage qui aurait dû être celui d’un octogénaire, mais n’accusait que la moitié de cet âge. « Voilà ce que nous allons faire, Lustig. Hinkston, vous et moi allons jeter un coup d’œil à cette ville. Les autres resteront à bord. S’il arrive quoi que ce soit, ils pourront filer. Mieux vaut perdre trois hommes que toute une expédition. Si les choses tournent mal, notre équipage pourra prévenir la prochaine fusée. Celle du capitaine Wilder, je crois, qui devrait être prête à décoller à Noël. S’il y a quelque <span style="background-color: #ffff66; color: black;">hostilité</span> à redouter de la part de Mars, il faut absolument que la prochaine fusée soit bien armée.
+<blockquote>— La nôtre l’est. Nous avons un véritable arsenal à notre disposition.</blockquote>
+<blockquote>— Alors dites aux hommes de se mettre en état d’alerte. Allons-y, Lustig, Hinkston. »</blockquote>
+Les trois hommes gagnèrent ensemble les niveaux inférieurs du vaisseau.
+C’était une superbe journée de printemps. Perché sur un pommier en fleur, un merle n’en finissait plus de siffler. Des pluies de pétales neigeux s’envolaient à chaque souffle du vent dans les branches verdoyantes, imprégnant l’air de leur parfum. Quelque part en ville, quelqu’un jouait du piano, et la musique allait et venait sur un rythme doux, somnolent. L’air était celui de La Belle Rêveuse. Ailleurs, un phonographe à la voix grêle et éraillée nasillait un enregistrement de Giboulées d’avril, chanté par Al Jolson.
+Les trois hommes s’étaient immobilisés à l’extérieur du vaisseau. Ils aspirèrent l’air ténu, ténu, suffoquant à demi, et se mirent lentement en mouvement pour ne pas se fatiguer.
+À présent le phonographe jouait :
+Oh, donnez-moi un soir de juin
+Le clair de lune et vous…
+Lustig commença à trembler. Samuel Hinkston en fit autant.
+Le ciel était calme et serein. Un ruisseau coulait quelque part dans la fraîcheur ombragée d’une <span style="background-color: #ffff66; color: black;">ravine</span>. Ailleurs, on reconnaissait le trot et les cahots d’un cheval et de sa charrette.
+<blockquote>« Capitaine, dit Samuel Hinkston, il faut admettre, force est d’admettre qu’on a commencé à envoyer des fusées sur Mars avant la Première Guerre mondiale.</blockquote>
+<blockquote>— Non.</blockquote>
+<blockquote>— Alors, comment expliquez-vous ces maisons, la biche en fer, les pianos, la musique ? » Hinkston prit le capitaine par le coude, bien décidé à se montrer persuasif, et le regarda dans les yeux. « Disons qu’il y avait en 1905 des gens qui, détestant la guerre, se sont secrètement entendus avec des scientifiques ; ils ont construit une fusée et sont venus ici, sur Mars…</blockquote>
+<blockquote>— Non, non, Hinkston.</blockquote>
+<blockquote>— Pourquoi pas ? Le monde était différent en 1905 ; le secret était beaucoup plus facile à garder.</blockquote>
+<blockquote>— S’agissant d’une chose aussi complexe qu’une fusée ? Non, impossible de garder ça secret.</blockquote>
+<blockquote>— Ils se sont installés ici, et naturellement ils ont construit des maisons semblables à celles de la Terre parce qu’ils emmenaient leur culture avec eux.</blockquote>
+<blockquote>— Et ils ont vécu ici toutes ces années ?</blockquote>
+<blockquote>— Dans la paix et la tranquillité, oui. Peut-être ont-ils fait plusieurs voyages, assez pour atteindre la population d’une petite ville ; puis ils en sont restés là de peur d’être découverts. Voilà pourquoi cette ville semble si vieillotte. Personnellement, je n’y vois rien qui soit postérieur à 1927, et vous ? À moins, capitaine, que les voyages interplanétaires ne soient plus anciens qu’on ne le croit. Il se peut qu’ils aient commencé quelque part dans le monde il y a des <span style="background-color: #ffff66; color: black;">siècles</span> de cela et qu’ils aient été gardés secrets par le petit nombre d’hommes qui sont venus sur Mars pour ne faire qu’occasionnellement des séjours sur la Terre au cours des siècles en question.</blockquote>
+<blockquote>— À vous entendre, on est presque convaincu.</blockquote>
+<blockquote>— Il ne peut qu’en être ainsi. Nous en avons la preuve sous les yeux ; il ne nous reste qu’à trouver des gens pour confirmer. »</blockquote>
+Le tapis de gazon qui étouffait le bruit de leurs bottes sentait l’herbe fraîchement coupée. Malgré lui, le capitaine John Black se sentait envahi par une immense quiétude. Il y avait trente ans qu’il ne s’était pas trouvé dans une petite ville ; le bourdonnement des abeilles printanières le berçait, l’apaisait, et l’air de fraîcheur de chaque chose lui mettait du baume à l’âme.
+Ils posèrent le pied sur la terrasse. Le plancher résonna sous leurs pas quand ils se dirigèrent vers la contre-porte treillissée. À l’intérieur ils aperçurent un rideau de perles suspendu en travers du vestibule, un lustre de cristal et un tableau de Maxfield Parrish dans son cadre au-dessus d’un confortable fauteuil Morris. La maison sentait l’ancien, le grenier, et respirait un confort infini. On pouvait entendre un tintement de glaçons dans un pichet de citronnade. Dans une cuisine invisible, en raison de la chaleur du jour, quelqu’un préparait un repas froid. Une femme fredonnait d’une douce voix de tête.
+Le capitaine John Black tira la sonnette.
+Des pas menus se rapprochèrent dans le vestibule et une femme au visage affable, d’une quarantaine d’années, vêtue d’une robe comme il devait s’en porter en 1939, les dévisagea à travers le treillis.</blockquote>
+<blockquote>« En quoi puis-je vous être utile ?</blockquote>
+<blockquote>— Je vous demande pardon, dit le capitaine Black d’une voix mal assurée. Mais nous cherchons… c’est-à-dire, pourriez-vous nous aider… » Il s’interrompit. Elle l’enveloppa d’un regard sombre, songeur.</blockquote>
+<blockquote>« Si c’est pour me vendre quelque chose…, commença-t-elle.</blockquote>
+<blockquote>— Non, attendez ! s’écria-t-il. Quelle est cette ville ? »</blockquote>
+Elle le toisa de la tête aux pieds. « Comment ça, quelle est cette ville ? Comment pouvez-vous vous trouver dans une ville sans en connaître le nom ? »
+On aurait dit que le plus grand désir du capitaine était d’aller s’asseoir à l’ombre d’un pommier. « Nous ne sommes pas d’ici. Nous aimerions savoir ce qui explique la présence de cette ville en ces lieux, et la vôtre par la même occasion.
+<blockquote>— Vous travaillez pour le recensement ?</blockquote>
+<blockquote>— Non.</blockquote>
+<blockquote>— Tout le monde sait que cette ville a été construite en 1868. C’est un jeu ?</blockquote>
+<blockquote>— Non, ce n’est pas un jeu ! s’écria le capitaine. Nous venons de la Terre.</blockquote>
+<blockquote>— Vous voulez dire que vous sortez du sol ? s’étonna la femme.</blockquote>
+<blockquote>— Non, nous arrivons de la troisième planète, la Terre, en vaisseau spatial. Et nous venons de nous poser ici, sur la quatrième planète, Mars…</blockquote>
+<blockquote>— Ici, expliqua la femme comme si elle s’adressait à un enfant, nous sommes à Green Bluff, dans l’Illinois, sur le continent américain, baigné par les océans Atlantique et Pacifique, dans ce que l’on appelle le monde ou, parfois, la Terre. Et maintenant, allez-vous-en. Adieu. »</blockquote>
+Elle s’enfonça dans le vestibule, écartant le rideau de perles du bout des doigts au passage.
+Les trois hommes se regardèrent.
+<blockquote>« Enfonçons la porte, dit Lustig.</blockquote>
+<blockquote>— On ne peut pas faire ça. C’est une propriété privée. Bon Dieu ! »</blockquote>
+Ils allèrent s’asseoir sur l’escalier de la terrasse.
+<blockquote>« Dites-moi, Hinkston, il ne vous est pas venu à l’idée que nous avons peut-être, je ne sais comment, dévié de notre route, rebroussé chemin par accident et atterri sur la Terre ?</blockquote>
+<blockquote>— Comment aurait-on pu faire ça ?</blockquote>
+<blockquote>— Je ne sais pas, je ne sais pas. Bon sang, laissez-moi réfléchir.</blockquote>
+<blockquote>— Enfin, quoi, nous avons contrôlé notre trajectoire tout du long. Nos chronos indiquaient tant et tant de kilomètres. Nous avons dépassé la Lune, plongé dans l’espace et nous voilà ici. Sur Mars, j’en suis absolument certain.</blockquote>
+<blockquote>— Mais supposons, dit Lustig, que par accident, dans l’espace, dans <span style="background-color: #ffff66; color: black;">le temps</span>, nous nous soyons perdus dans les dimensions pour atterrir sur une Terre d’il y a trente ou quarante ans.</blockquote>
+<blockquote>— Oh, ça va, Lustig ! »</blockquote>
+Lustig revint vers la porte, tira la sonnette et lança dans la fraîche pénombre des pièces : « En quelle année sommes-nous ?
+<blockquote>— 1956, bien sûr », répondit la dame. Assise dans un fauteuil à bascule, elle sirotait un verre de citronnade.</blockquote>
+<blockquote>« Vous avez entendu ? » Lustig se retourna d’un bloc vers les autres. « 1956 ! Nous avons bel et bien remonté le temps ! Nous sommes bel et bien sur la Terre ! »</blockquote>
+Lustig se rassit et les trois hommes se laissèrent aller à l’émerveillement et à la terreur que leur inspirait une telle pensée. Posées sur leurs genoux, leurs mains étaient agitées de tremblements spasmodiques. « Je n’avais pas demandé ça, dit le capitaine. Ça me fout les jetons. Comment est-ce possible ? Si seulement on avait pu emmener Einstein avec nous !</blockquote>
+<blockquote>— Est-ce qu’un seul habitant de cette ville va nous croire ? s’inquiéta Hinkston. Est-ce qu’on joue un jeu dangereux ? Avec le temps, je veux dire. Est-ce qu’on ne devrait pas repartir et rentrer chez nous ?</blockquote>
+<blockquote>— Non. Pas avant d’avoir fait un autre essai. »</blockquote>
+Ils dépassèrent trois maisons et arrivèrent en vue d’un petit cottage blanc dominé par un chêne. « Je tiens à rester aussi logique que possible, dit le capitaine. Et je ne crois pas qu’on ait vraiment mis dans le mille. Supposez, Hinkston, comme vous l’avez d’abord suggéré, que les voyages interplanétaires remontent à des années. Et qu’au bout d’un certain nombre d’années passées ici, nos Terriens aient commencé à avoir le mal du pays. D’abord une légère névrose, puis une psychose en bonne et due forme. Pour arriver à la démence caractérisée. Que feriez-vous, en tant que psychiatre, si vous étiez confronté à un tel problème ? »
+Hinkston réfléchit. « Eh bien, je crois que j’infléchirais la civilisation de façon que Mars ressemble tous les jours un peu plus à la Terre. Si j’avais les moyens de reproduire chaque plante, chaque route, chaque lac et même un océan, c’est ce que je ferais. Ensuite, par le biais de quelque hypnose collective, je persuaderais tous les habitants d’une ville comme celle-ci qu’ils se trouvent effectivement sur la Terre, et non sur Mars.
+<blockquote>— Pas mal, Hinkston. Je crois que nous sommes sur la bonne voie. Cette femme que nous avons vue tout à l’heure se croit sur la Terre. Ça lui permet de conserver sa santé mentale.</blockquote>
+Elle et tous les habitants de cette ville sont les sujets de la plus grande expérience de migration et d’hypnose que vous aurez jamais l’occasion de contempler.</blockquote>
+<blockquote>— Bien vu, capitaine ! s’écria Lustig.</blockquote>
+<blockquote>— Tout à fait ! renchérit Hinkston.</blockquote>
+<blockquote>— Bon, soupira le capitaine. Nous voilà parvenus quelque part. Je me sens mieux. Tout ça est un peu plus logique. Cette histoire de temps, d’aller et retour et de voyage dans le temps me met l’estomac à l’envers. Mais comme ça… » Le capitaine sourit. « Hé, hé, j’ai l’impression que nous allons être plutôt populaires par ici.</blockquote>
+<blockquote>— Est-ce bien sûr ? objecta Lustig. Après tout, comme les Pèlerins, ces gens sont venus ici pour fuir la Terre. Peut-être qu’ils ne seront pas tellement contents de nous voir. Peut-être vont-ils essayer de nous chasser ou de nous tuer.</blockquote>
+<blockquote>— Notre armement est supérieur. Direction la prochaine maison. En avant. »</blockquote>
+Mais à peine avaient-ils traversé la pelouse que Lustig s’arrêta net, le regard fixé côté ville, sur la rue tranquille, absorbée dans son rêve d’après-midi. « Capitaine, dit-il.</blockquote>
+<blockquote>— Qu’est-ce qu’il y a, Lustig ?</blockquote>
+<blockquote>— Oh, capitaine, capitaine, ce que je vois… » Et Lustig se mit à pleurer. Ses doigts s’élevèrent, crispés et tremblants, et son visage n’était qu’émerveillement, joie et incrédulité. Il semblait sur le point de devenir fou de bonheur d’une seconde à l’autre. Les yeux rivés sur la rue, il commença à courir, trébuchant, tombant, se relevant, reprenant sa course. « Regardez, regardez !</blockquote>
+<blockquote>— Ne le laissons pas s’éloigner ! » Le capitaine s’élança à sa poursuite.</blockquote>
+À présent Lustig filait à toute allure en poussant des hurlements. Il tourna dans un jardin à mi-parcours de la rue ombragée et bondit sur la terrasse d’une grande maison verte arborant un coq de fer sur le toit.
+Il cognait à la porte, criant et pleurant, quand Hinkston et le capitaine le rejoignirent. Ils étaient tous à bout de souffle, épuisés par leur galopade dans l’air raréfié.
+<blockquote>« Grand-mère ! Grand-père ! » s’écria Lustig.</blockquote>
+Deux vieillards se tenaient dans l’entrée.
+<blockquote>« David ! » s’exclamèrent-ils d’une voix fluette. Et ils se précipitèrent pour l’enlacer, lui tapoter le dos et tourner autour de lui. « David, oh, David, ça fait tellement longtemps ! Comme tu as grandi, mon garçon, quel costaud tu es devenu. Oh, mon petit David, comment vas-tu ?</blockquote>
+<blockquote>— Grand-mère, grand-père ! sanglotait David Lustig. Vous avez des mines splendides, splendides ! »</blockquote> Il les agrippait, les faisait pivoter, les embrassait, les étreignait, leur pleurait dessus, les tenait de nouveau à bout de bras, contemplant les deux vieillards d’un œil clignotant. Le soleil brillait dans le ciel, le vent soufflait, l’herbe était verte, la porte d’entrée grande ouverte.
+<blockquote>« Entre, mon garçon, entre. Il y a du thé glacé pour toi, tout frais, un plein pot !</blockquote>
+<blockquote>— J’ai des amis avec moi. » Lustig se retourna, hilare, et adressa des signaux <span style="background-color: #ffff66; color: black;">frénétiques</span> au capitaine et à Hinkston. « Allez, capitaine, venez.</blockquote>
+<blockquote>— Bien le bonjour, dirent les vieux. Entrez donc. Tous les amis de David sont nos amis. Ne restez pas plantés là ! »</blockquote>
+Une agréable fraîcheur régnait dans le salon de la vieille maison. Une haute pendule de grand-mère faisait entendre son lent tic-tac de bronze dans un coin. Des coussins mœlleux recouvraient de larges divans, les murs étaient remplis de livres, le plancher s’agrémentait d’un tapis en forme de grosse rose et le thé glacé qui s’embuait au creux de la main rafraîchissait les gosiers desséchés.
+<blockquote>« À notre santé à tous. » Grand-mère porta son verre à son sourire de porcelaine.</blockquote>
+<blockquote>« Depuis combien de temps êtes-vous ici, grand-mère ? demanda Lustig.</blockquote>
+<blockquote>— Depuis notre mort, répondit-elle d’un ton sec.</blockquote>
+<blockquote>— Depuis votre quoi ? » Le capitaine Black reposa son verre.</blockquote>
+<blockquote>« Eh oui. » Lustig hocha la tête. « Il y a trente ans qu’ils sont morts.</blockquote>
+<blockquote>— Et vous restez assis là bien tranquillement ! s’écria le capitaine.</blockquote>
+<blockquote>— Peuh ! » La vieille femme cligna un œil pétillant.</blockquote>
+<blockquote>« Qui êtes-vous pour mettre en question ce qui arrive ? Nous sommes ici. Qu’est-ce que la vie, après tout ? Qui décide des pourquoi, des comment et des où ? Tout ce que nous savons, c’est que nous sommes ici, rendus à la vie, et qu’il n’y a pas de questions à se poser. Une seconde chance. » Elle s’approcha de Black à petits pas et lui tendit son mince poignet. « Touchez. » Le capitaine toucha.</blockquote>
+<blockquote>« Résistant, n’est-ce pas ? » Il acquiesça. « Alors, fît-elle, triomphante, pourquoi se fatiguer à poser des questions ?</blockquote>
+<blockquote>— Eh bien, dit le capitaine, c’est simplement que nous n’avons pas pensé une seconde que nous trouverions quelque chose de ce genre sur Mars.</blockquote>
+<blockquote>— Et voilà que vous l’avez trouvé. Laissez-moi vous dire qu’il y a sur chaque planète bien des choses qui vous montreront que les voies de Dieu sont infinies.</blockquote>
+<blockquote>— Est-ce là le paradis ? demanda Hinkston.</blockquote>
+<blockquote>— Absurde. Non. C’est un monde où l’on a une deuxième chance. Personne ne nous a dit pourquoi. Mais personne ne nous a dit pourquoi nous étions sur la Terre, non plus. Cette autre Terre, je veux dire. Celle d’où vous venez. Comment savoir s’il n’y en avait pas encore une autre avant celle-là ?</blockquote>
+<blockquote>— Bonne question », dit le capitaine.</blockquote>
+Lustig continuait de sourire à ses grands-parents. « Ça alors, ça fait plaisir de vous voir. Ça alors, ça fait plaisir. »
+Le capitaine se leva et se frappa la cuisse d’un geste désinvolte. « Il faut qu’on y aille. Merci pour les rafraîchissements.
+<blockquote>— Vous reviendrez, bien entendu, dirent les vieillards. Ce soir pour dîner ?</blockquote>
+<blockquote>— On tâchera, merci. Il y a tellement à faire. Mes hommes attendent mon retour à la fusée et… »</blockquote>
+Il s’interrompit. Regarda vers la porte, stupéfait.
+Au loin, dans le soleil, on distinguait un concert de voix, des cris et une immense clameur.
+<blockquote>« Qu’est-ce qui se passe ? demanda Hinkston.</blockquote>
+<blockquote>— Nous n’allons pas tarder à le savoir. » Et le capitaine Black d’être déjà dehors, en train de traverser la pelouse au pas de course pour gagner la rue de la petite ville martienne.</blockquote>
+Il s’immobilisa en vue de la fusée. Les trappes étaient ouvertes et l’équipage se déversait dehors en agitant les mains. Une foule s’était rassemblée et, au milieu de tous ces gens, les membres de l’équipage s’empressaient, parlaient, riaient, serraient des mains. On se lançait dans de petites danses. On s’agglutinait. La fusée restait vide et abandonnée.
+Une fanfare éclata dans le soleil, envoyant un air allègre de ses tubas et trompettes haut levés qu’accompagnait le roulement des tambours et le son aigu des fifres. Des petites filles blondes comme les blés sautaient à pieds joints. Des petits garçons lançaient des hourras. De gros messieurs offraient des cigares de dix cents à la ronde. Le maire fit un discours. Puis chaque membre de l’équipage, une mère à un bras, un père ou une sœur à l’autre, disparut le long de la rue comme par enchantement dans de petits cottages ou de grandes maisons.
+<blockquote>« Arrêtez ! » s’écria le capitaine Black.</blockquote>
+Les portes se refermèrent en claquant.
+La chaleur s’accrut dans la clarté du ciel printanier, et tout redevint silencieux. La fanfare se tut à l’angle d’un carrefour, laissant la fusée briller toute seule, éblouissante, sous le soleil.
+<blockquote>« <span style="background-color: #ffff66; color: black;">Déserteurs !</span> dit le capitaine. Ils ont déserté le vaisseau, ma parole ! J’aurai leur peau, nom de Dieu ! Ils avaient des ordres !</blockquote>
+<blockquote>— Capitaine, dit Lustig, ne soyez pas trop dur avec eux. Tous ces gens étaient d’anciens parents et amis.</blockquote>
+<blockquote>— Ce n’est pas une excuse !</blockquote>
+<blockquote>— Pensez à ce qu’ils ont pu ressentir, capitaine, en voyant des visages familiers à l’extérieur du vaisseau.</blockquote>
+<blockquote>— Les ordres sont les ordres, bon sang !</blockquote>
+<blockquote>— Et vous, capitaine, comment auriez-vous réagi ?</blockquote>
+<blockquote>— J’aurais obéi aux ordres… » La bouche du capitaine demeura ouverte.</blockquote>
+Le long du trottoir, marchant à grandes enjambées sous le soleil martien, grand, souriant, les yeux d’un bleu étonnamment
+clair, s’avançait un jeune homme dans les vingt-six ans. « John ! » lança-t-il, et il se mit à courir.
+<blockquote>« Quoi ? » Black vacilla.</blockquote>
+<blockquote>« John, vieille canaille ! »</blockquote>
+Le jeune homme arriva à sa hauteur, lui empoigna la main et lui assena de grandes claques dans le dos.
+<blockquote>« C’est toi, dit le capitaine Black.</blockquote>
+<blockquote>— Bien sûr, qui croyais-tu que c’était ?</blockquote>
+<blockquote>— Edward ! » Le capitaine se tourna vers Lustig et Hinkston sans lâcher la main de l’étranger. « Voici mon frère Edward. Ed, je te présente mes hommes, Lustig, Hinkston. Mon frère ! »</blockquote>
+Ils se tirèrent par les mains et les bras et finirent par s’embrasser.
+<blockquote>« Ed !</blockquote>
+<blockquote>— John, sacré bon à rien !</blockquote>
+<blockquote>— Tu as une mine splendide, Ed, mais dis-moi, Ed, qu’est-ce que c’est que tout ça ? Tu n’as pas changé depuis tout ce temps. Tu es mort, je m’en souviens, à vingt-six ans. J’en avais alors dix-neuf. Bon Dieu, il y a tellement longtemps, et te voilà, et… zut, qu’est-ce qui se passe ?</blockquote>
+<blockquote>— Maman attend, dit Edward Black avec un grand sourire.</blockquote>
+<blockquote>— Maman ?</blockquote>
+<blockquote>— Et papa aussi.</blockquote>
+<blockquote>— Papa ? » Le capitaine faillit en tomber à la renverse, comme assommé. Il se mit à marcher d’un pas raide, sans coordination. « Papa et maman vivants ? Où ça ?</blockquote>
+<blockquote>— À la vieille maison d’Oak Knoll Avenue.</blockquote>
+<blockquote>— La vieille maison… » Le capitaine ouvrit de grands yeux ravis. « Vous avez entendu ça, Lustig, Hinkston ? »</blockquote>
+Hinkston était déjà parti. Il avait vu sa propre maison au bout de la rue et s’y rendait à toutes jambes. Lustig riait.
+<blockquote>« Vous voyez, capitaine, ce qui est arrivé à tout l’équipage ? C’était plus fort qu’eux.</blockquote>
+<blockquote>— Oui. Oui. » Le capitaine ferma les paupières.</blockquote>
+<blockquote>« Quand j’ouvrirai les yeux, tu auras disparu. » Il cilla.</blockquote>
+<blockquote>« Tu es encore là. Bon Dieu, Ed, mais tu as l’air en pleine forme !</blockquote>
+<blockquote>— Viens, le déjeuner t’attend. J’ai prévenu maman.</blockquote>
+<blockquote>— Capitaine, dit Lustig, si vous avez besoin de moi, je serai chez mes grands-parents.</blockquote>
+<blockquote>— Quoi ? Oh, très bien, Lustig. Alors, à plus tard. »</blockquote>
+Edward le prit par le bras et l’entraîna. « Voilà la maison. Tu te souviens ?
+<blockquote>— Et comment ! Je te parie que j’arrive le premier à la terrasse ! »
+Ils s’élancèrent. Les arbres filaient au-dessus de la tête du capitaine Black ; le sol filait sous ses pieds. Il vit la silhouette dorée d’Edward le distancer dans le rêve étonnant qu’était la <span style="background-color: #ffff66; color: black;">réalité</span>. Il vit la maison se précipiter vers lui, la contre-porte treillissée s’ouvrir à la volée. « Battu ! cria Edward.
+<blockquote>— Je suis un vieil homme, haleta le capitaine, et tu es toujours jeune. Mais bon, tu me battais régulièrement, je m’en souviens ! »</blockquote>
+Sur le seuil, maman, rose, bien en chair, rayonnante. Derrière elle, poivre et sel, papa, sa pipe à la main.
+<blockquote>« Maman, papa ! »</blockquote>
+Il avala les marches comme un enfant pour les rejoindre.
+Ce fut un long et bel après-midi. Ils s’attardèrent à table, puis allèrent s’asseoir dans le salon, et il leur raconta tout de sa fusée. Ils hochaient la tête en le couvant de leur sourire. Maman était toujours la même, papa trancha d’un coup de dents le bout de son cigare et l’alluma pensivement comme autrefois. Le soir, il y eut de la dinde à dîner et encore du temps passé ensemble. Quand il ne resta plus dans les assiettes que des pilons nettoyés jusqu’à l’os, le capitaine se renversa en arrière en poussant un grand soupir de satisfaction. La nuit envahissait les arbres et colorait le ciel ; les lampes formaient des halos de lumière rose dans le calme de la maison. Dans toutes les autres maisons qui jalonnaient la rue, on entendait jouer des pianos, claquer des portes.
+Maman mit un disque sur le gramophone et le capitaine Black dansa avec elle. Elle avait le même parfum que celui dont il gardait le souvenir depuis l’été où papa et elle avaient été tués dans l’accident de train. Il la sentait bien réelle dans ses bras tandis qu’ils effleuraient le sol au rythme de leurs pas. « Ce n’est pas tous les jours, dit-elle, qu’on a la chance de vivre une deuxième fois.</blockquote>
+<blockquote>— Je vais me réveiller demain matin, dit le capitaine. Je serai dans ma fusée, dans l’espace, et tout ça aura disparu.</blockquote>
+<blockquote>— Non, ne pense pas de choses pareilles, le gronda-t-elle doucement. Dieu est bon pour nous. Soyons heureux.</blockquote>
+<blockquote>— Excuse-moi, maman. »</blockquote>
+Le disque s’acheva sur un grésillement répété.
+<blockquote>« Tu es fatigué, fiston. » Papa pointa sa pipe vers le plafond. « Ton ancienne chambre t’attend, le lit de cuivre et tout le reste.</blockquote>
+<blockquote>— Il faut que je rappelle mes hommes.</blockquote>
+<blockquote>— Pourquoi ça ?</blockquote>
+<blockquote>— Pourquoi ? Mais… je ne sais pas. Il n’y a pas de raison, je suppose. Non, pas la moindre raison. Ils sont tous en train de dîner ou au lit. Une bonne nuit de sommeil ne leur fera pas de mal.</blockquote>
+<blockquote>— Bonne nuit, mon petit. » Maman déposa un baiser sur sa joue. « C’est si bon de t’avoir au bercail.</blockquote>
+<blockquote>— C’est bon d’être au bercail. »</blockquote>
+Il quitta ce pays de fumée de cigare, de parfum, de livres et de douce lumière et gravit l’escalier sans cesser de bavarder avec Edward. Celui-ci poussa une porte, et il y avait là le lit de cuivre jaune, les vieux fanions du collège et une peau de raton laveur à la forte odeur de moisi qu’il caressa avec attendrissement. « Je n’en peux plus, dit le capitaine. Je suis moulu. Il est arrivé trop de choses aujourd’hui. J’ai l’impression d’avoir passé quarante-huit heures sous une pluie battante sans manteau ni parapluie. Je suis trempé d’émotion jusqu’aux os. »
+Edward rabattit les draps neigeux et fit gonfler les oreillers. Il ouvrit la fenêtre à guillotine, laissant l’odeur nocturne du jasmin flotter à l’intérieur de la pièce. Il y avait clair de lune et l’on entendait au loin des bruits de danse et de conversation.
+<blockquote>« Voilà donc Mars, fit le capitaine en se déshabillant.</blockquote>
+<blockquote>— Eh oui. » Edward se dévêtait avec des <span style="background-color: #ffff66; color: black;">mouvements mesurés</span>, sans se presser. Il tira sa chemise par-dessus sa tête, révélant des épaules dorées et une nuque solidement musclée.</blockquote>
+Les lumières furent éteintes. Ils étaient désormais au lit, côte à côte, comme autrefois, il y avait de cela combien de lustres ? Le capitaine se prélassait, se repaissant des bouffées de jasmin qui soulevaient les rideaux de dentelle dans l’obscurité. Parmi les arbres, sur une pelouse, quelqu’un avait remonté un phonographe portatif qui jouait à présent Toujours.
+Il se mit à penser à Marilyn.
+<blockquote>« Est-ce que Marilyn est ici ? »</blockquote>
+Son frère, allongé en plein dans le clair de lune qui tombait de la fenêtre, ne répondit pas tout de suite. « Oui. Elle n’est pas en ville. Mais elle sera là demain matin. »
+Le capitaine ferma les yeux. « J’ai très envie de voir Marilyn. »
+L’ordre et le calme de la pièce ne furent troublés que par le bruit de leur respiration.
+<blockquote>« Bonne nuit, Ed. »</blockquote>
+Un temps. « Bonne nuit, John. »
+Tranquillement allongé, il laissa flotter ses pensées. Pour la première fois, la tension de la journée se relâchait ; il pouvait laisser la logique reprendre ses droits. Tout n’avait été qu’émotion. Les flonflons, les visages familiers. Mais maintenant…
+Comment ? se demanda-t-il. Comment tout cela pouvait-il se faire ? Et pourquoi ? Dans quel but ? Un effet de la bonté de la divine providence ? Dieu était-il donc à ce point attentionné envers ses enfants ? Comment, pourquoi et à quelle fin ?
+Il reconsidéra les diverses théories avancées dans les premières fièvres de l’après-midi par Hinkston et Lustig. Il laissa toutes sortes de nouvelles hypothèses s’enfoncer paresseusement dans son esprit comme autant de petits cailloux qui tournaient sur eux-mêmes, émettant de vagues lueurs. Maman. Papa. Edward. Mars. La Terre. Mars. Les Martiens.
+Qui vivait sur Mars un millier d’années auparavant ? Les Martiens ? Ou en avait-il toujours été comme aujourd’hui ?
+Les Martiens. Il laissait le mot revenir indolemment dans sa tête.
+Il faillit rire tout haut. La plus ridicule des théories venait de lui traverser l’esprit. Il en éprouva comme un frisson. Non, il ne valait pas la peine de s’y arrêter. Hautement improbable. Stupide. À écarter. Ridicule.
+Et pourtant, songea-t-il, supposons… Supposons, là, qu’il y ait des Martiens vivant sur Mars, qu’ils aient vu notre vaisseau arriver, qu’ils nous aient vus à l’intérieur, et qu’ils se soient pris de haine pour nous. Supposons, là, juste pour s’amuser, qu’ils aient eu envie de nous détruire, en tant qu’envahisseurs, indésirables, et qu’ils aient voulu procéder de façon très astucieuse, en trompant notre vigilance. Quelle serait alors la meilleure arme qu’un Martien pourrait utiliser contre des Terriens munis d’armes nucléaires ?
+La réponse était intéressante. Télépathie, hypnose, mémoire et imagination.
+Supposons que ces maisons, ce lit, n’aient aucune réalité, qu’il ne s’agisse que de créations de mon imagination, matérialisées par le pouvoir télépathique et hypnotique des Martiens, songeait le capitaine Black. Supposons que ces maisons présentent un tout autre <span style="background-color: #ffff66; color: black;">aspect</span>, un aspect martien, mais qu’en jouant sur mes désirs et mes besoins, ces Martiens leur aient donné l’apparence de ma ville natale, de mon ancienne maison, pour endormir mes soupçons. Quel meilleur moyen de berner quelqu’un que de se servir de ses propres parents comme appât ?
+Et cette ville, si ancienne, de 1956, bien avant la naissance de n’importe lequel de mes hommes. De l’année de mes six ans, d’un temps où il existait en effet des disques de Al Jolson, des tableaux de Maxfield Parrish aux murs, des rideaux de perles, Mon bel Ohio et une architecture fin de siècle. Et si les Martiens avaient puisé les souvenirs d’une ville dans ma seule mémoire ? On dit que les souvenirs d’enfance sont les plus nets. Et qu’après avoir construit cette ville à partir de mes souvenirs, ils l’aient peuplée des êtres les plus chers dont les passagers de la fusée gardaient le souvenir ?
+Et supposons que ces deux personnes endormies dans la pièce à côté ne soient nullement mon père et mère. Mais deux Martiens, incroyablement doués, ayant le pouvoir de me maintenir dans cet état d’hypnose.
+Et cette fanfare ? Quel admirable plan. D’abord, tromper Lustig, puis Hinkston, puis rassembler la foule ; et tout <span style="background-color: #ffff66; color: black;">l’équipage</span>, reconnaissant mères, tantes, oncles, bienaimés morts depuis dix, vingt ans, passe naturellement outre aux ordres, se précipite hors du vaisseau, l’abandonne. Quoi de plus naturel ? Quoi de moins suspect ? Quoi de plus simple ? Un homme ne pose pas tellement de questions quand sa mère est soudain ramenée à la vie ; il est trop heureux. Et nous voilà tous ce soir, dans différentes maisons, différents lits, sans armes pour nous protéger, tandis que la fusée repose au clair de lune, <span style="background-color: #ffff66; color: black;">vide</span>. Ne serait-ce pas horrible, terrifiant, de découvrir que tout cela fait partie d’un vaste plan ingénieusement élaboré par les Martiens pour nous diviser, nous subjuguer et nous tuer ? Durant la nuit, à un moment ou un autre, mon frère couché là, dans ce lit, va peut-être changer de forme, se remodeler, devenir autre chose, quelque chose de terrible, un Martien. Il serait si simple pour lui de se retourner dans le lit et de me planter un couteau dans le cœur. Et dans toutes les autres maisons de la rue, ce serait une douzaine d’autres frères ou pères qui se transformeraient soudain, s’armeraient de couteau et s’en serviraient sur les Terriens endormis, sans méfiance…
+Ses mains tremblaient sous les couvertures. Son corps était glacé. Soudain, ce ne fut plus une hypothèse. Soudain, il fut saisi de terreur.
+Il se redressa dans le lit et écouta. La nuit était parfaitement calme. La musique s’était tue. Le vent était tombé. Son frère dormait à côté de lui.
+Prudemment, il souleva les couvertures, les rabattit et se glissa hors du lit. Il traversait la pièce à pas de loup quand la voix de son frère lança : « Où vas-tu ?
+<blockquote>— Quoi ? »
+La voix d’Edward manquait de chaleur. « J’ai dit : où vas-tu ?</blockquote>
+<blockquote>— Boire un verre d’eau.</blockquote>
+<blockquote>— Mais tu n’as pas soif.</blockquote>
+<blockquote>— Si, si.</blockquote>
+<blockquote>— Non, c’est faux. »</blockquote>
+Le capitaine John Black fonça à travers la pièce. Il hurla. Il hurla deux fois.
+Il n’atteignit jamais la porte.
+Le lendemain matin, la fanfare jouait une marche funèbre. De chaque maison sortirent de petits cortèges solennels portant des caisses oblongues, et, dans la rue ensoleillée, en larmes, s’avancèrent les grand-mères, mères, sœurs, frères, oncles et pères pour se rendre au cimetière où des fosses fraîchement creusées s’ouvraient au pied de nouvelles <span style="background-color: #ffff66; color: black;">pierres tombales</span>. Seize fosses en tout, et seize pierres tombales.
+Le maire prononça un petit discours attristé ; son visage ressemblait tantôt à celui du maire, tantôt à tout autre chose.
+Papa et maman Black étaient là, avec l’aîné des deux frères, Edward, en pleurs, et voilà que leurs traits familiers se décomposaient pour prendre un tout autre aspect.
+Grand-père et grand-mère Lustig étaient là eux aussi, en larmes, leurs visages se remodelant comme de la cire, disparaissant dans le flou miroitant qui baigne toute chose par grande chaleur.
+Les cercueils furent descendus dans les fosses. Quelqu’un parla à voix basse du « décès inattendu et soudain de seize braves garçons durant la nuit »…
+Quelques poignées de terre furent jetées sur les couvercles des cercueils.
+La fanfare, jouant Columbia, joyau de l’océan, reprit d’un pas martial la direction de la ville, et chacun se mit en congé pour la journée.
+</p></section>
+<br>
+
+<p class="foot"><em>The Third Expedition (1948)
+Traduction de Jacques Chambon et Henri Robillot,<br>
+Extrait de l’ouvrage Chroniques martiennes, Ray Bradbury, Éditions Denoël, Paris, 1997
+</em></p>
+</section>
+<div class="footer"><a href="credits.pdf"><p ><em>Collection numérique réalisée par Valentin Dewez  <u> © Crédits</u></em></p></a></div>
+<!---CURSORS--->
+  <div class='your-cursor1'></div>
+  <div class='follow1'></div>
+
+<style>
+  body {
+    min-font-size: 16px;
+  }
+  p, li, dd {
+  	kerning-pairs: az 0.02em;
+    rag-adjust: small-words;
+    widow-adjust: padding-right;
+
+  }
+</style>
+<script src="./jquery-1.10.2.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="./js/addthishit.js"></script>
+ <script src="./jquery-1.10.2.js"></script>
+  <script src="./jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="./js/aos.js" type="text/javascript"></script>
+<script src="./js/type.js" type="text/javascript"></script>
+<script src="./js/nav.js" type="text/javascript"></script>
+<script src="./js/cursor.js" type="text/javascript"></script>
+<script src="./js/moove.js" type="text/javascript"></script>
+<script src="./js/highlight.js" type="text/javascript"></script>
+  <script src="./js/html5audio.js" type="text/javascript"></script>
+   <script src="./js/draggable.js" type="text/javascript"></script>
+  <script src="./js/dark.js" type="text/javascript"></script>
+  <script src="./js/add.js" type="text/javascript"></script>
+  <script src="./js/delete.js" type="text/javascript"></script>
+  <script>
+  AOS.init({
+
+  	duration: 2500,
+     }
+
+
+  	);
+</script>
+
+</body>
+</html>

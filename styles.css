@@ -1,0 +1,752 @@
+@font-face { font-family: Sporting Grotesk; font-weight: bold; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Bold.otf');}
+@font-face { font-family: Sporting Grotesk; font-weight: normal; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Regular.otf');}
+
+/*postit*/
+
+#delete{
+  background-color:#ffff66 ;
+  border: none;
+  height: 2em;
+width: 2em;
+}
+
+#addbutton{
+  background-color:#ffff66 ;
+  border: 1.5px solid black;
+  height: 2em;
+width: 2em;
+margin-top: 20em;
+margin-left: 20em;
+}
+
+#postit {
+  
+  position: absolute;
+   background-color: #ffff66;
+  border: 3px double black;
+  height: 20em;
+width: 20em;
+cursor: text;
+overflow: auto:
+ 
+}
+
+#postitheader {
+  margin-top: -18em;
+  padding: 10px;
+  cursor: move;
+    background-color: #ffff66;
+  color: black;
+  text-align: center;
+}
+
+
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+
+/* dark-mode*/
+
+::selection {
+  color: darkgrey;
+}
+
+.switch-container,
+.switch {
+  transition: .3s background;
+}
+
+
+.switch-container {
+  width: 50px;
+  height: 25px;
+  margin-left: 2em;
+  border-radius: 30px;
+  box-shadow: inset 0 0 5px #bbb;
+  cursor: pointer;
+}
+
+.switch {
+  background: #142634;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transition: .3s margin-left;
+}
+
+.switched-on {
+  margin-left: 25px;
+  background: #212121;
+}
+
+.on-indicator {
+  background: #5a666b;
+  box-shadow: none;
+}
+
+.night-mode-text {
+  color: #bdc7c1;
+  
+}
+
+/*Grid-images*/
+
+.img-1-2{
+
+  padding-top: 10em;
+}
+
+   }
+.img-1-1{
+
+  padding-top: 25em;
+   }
+
+.img-2-1{
+
+  padding-top: 25em;
+}
+.img-3-1{
+
+  padding-top: 25em;
+}
+.img-4-1{
+
+  padding-top: 25em;
+}
+.img-5-1{
+
+  padding-top: 25em;
+}
+.img-6-1{
+
+  padding-top: 25em;
+}
+.img-7-1{
+
+  padding-top: 25em;
+}
+.img-8-1{
+
+  padding-top: 25em;
+}
+.img-9-1{
+
+  padding-top: 25em;
+}
+.img-10-1{
+  
+  padding-top: 25em;
+}
+.img-11-1{
+
+  padding-top: 25em;
+}
+.img-12-1{
+
+  padding-top: 25em;
+}
+.img-13-1{
+
+  padding-top: 25em;
+}
+.img-14-1{
+
+  padding-top: 25em;
+}
+.img-15-1{
+
+  padding-top: 25em;
+}
+.img-16-1{
+
+  padding-top: 25em;
+}
+.img-17-1{
+
+  padding-top: 25em;
+}
+.img-18-1{
+
+  padding-top: 25em;
+}
+
+.img-1{
+
+  padding-top: 60em;
+   }
+
+.img-2
+{
+  padding-top: 60em;
+}
+.img-3{
+
+  padding-top: 60em;
+}
+.img-4{
+
+  padding-top: 60em;
+}
+.img-5{
+
+  padding-top: 60em;
+}
+.img-6{
+
+  padding-top: 60em;
+}
+.img-7{
+
+  padding-top: 60em;
+}
+.img-8{
+
+  padding-top: 60em;
+}
+.img-9{
+
+  padding-top: 60em;
+}
+.img-10{
+  
+  padding-top: 60em;
+}
+.img-11{
+
+  padding-top: 60em;
+}
+.img-12{
+
+  padding-top: 60em;
+}
+.img-13{
+
+  padding-top: 60em;
+}
+.img-14{
+
+  padding-top: 60em;
+}
+.img-15{
+
+  padding-top: 60em;
+}
+.img-16{
+
+  padding-top: 70em;
+}
+.img-17{
+
+  padding-top: 60em;
+}
+.img-18{
+
+  padding-top: 60em;
+}
+.vid-1{
+
+  padding-top: 60em;
+}
+
+/* Attributs images*/
+
+.image{
+
+display: block;
+position: absolute;
+float: left;
+align-content: center;
+align-items: center;
+padding-top: 50em;
+padding-right: 6em;
+width: 50%;
+ -webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -ms-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+opacity: 1;
+
+
+}
+.image:hover{
+
+
+opacity: 0;
+
+
+}
+
+/* Back to the top*/
+
+.hautdepage{
+
+  margin-right: -500px;
+  font-size: 300%;
+   ;
+}
+
+
+.legende{
+
+  padding-top: 50em;
+  font-size: 80%;
+  font-style: italic;
+  text-align: center;
+}
+
+
+#synopsis  {
+  margin-left: -30em;
+  float: left;
+  height: 50%;
+  width: 20em;
+ 
+
+   }
+
+   .auteur{
+
+
+font: normal 0.7em "Sporting Grotesk", sans-serif;
+  position: relative;
+  
+}
+
+
+   }
+ .synopsis { 
+  font: normal 0.5em "Sporting Grotesk", sans-serif;
+  position: relative;
+  color: black;
+}
+
+@media only screen and ( max-width: 400px ) /* 520 */
+{
+  .audioplayer-time {display: none;}
+  .audioplayer-bar { left: 3em; right: 1em;}
+}
+
+
+
+.menu{
+
+font-size: 1.1em;
+  margin-left: 105rem;
+  position: fixed;
+}
+
+
+.hautpage{
+
+font-size: 2.5em;
+  margin-left: 125rem;
+  margin-top: 78rem;
+  position: fixed;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: white; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+    text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 1280px){
+
+
+.menu{
+
+
+  font-size: 0.8em;
+  margin-left: 70em;
+  position: fixed;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: white; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hautpage{
+
+font-size: 2.5em;
+  margin-left: 100rem;
+  margin-top: 78rem;
+  position: fixed;
+}
+.image{
+
+display: block;
+position: absolute;
+float: left;
+align-content: center;
+align-items: center;
+padding-top: 50em;
+padding-right: 0em;
+width: 70%;
+ -webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -ms-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+opacity: 1;
+
+
+}
+.image:hover{
+
+
+opacity: 0;
+
+
+}
+.img-1{
+
+  padding-top: 50em;
+   }
+
+.img-2
+{
+  padding-top: 50em;
+}
+.img-3{
+
+  padding-top: 50em;
+}
+.img-4{
+
+  padding-top: 50em;
+}
+.img-5{
+
+  padding-top: 50em;
+}
+.img-6{
+
+  padding-top: 50em;
+}
+.img-7{
+
+  padding-top: 50em;
+}
+.img-8{
+
+  padding-top: 50em;
+}
+.img-9{
+
+  padding-top: 50em;
+}
+.img-10{
+
+  padding-top: 50em;
+}
+.img-11{
+
+  padding-top: 50em;
+}
+.img-12{
+
+  padding-top: 50em;
+}
+.img-13{
+
+  padding-top: 50em;
+}
+.img-14{
+
+  padding-top: 50em;
+}
+.img-15{
+
+  padding-top: 50em;
+}
+.img-16{
+
+  padding-top: 50em;
+}
+.img-17{
+
+  padding-top: 50em;
+}
+.img-18{
+
+  padding-top: 50em;
+}
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ 
+    .links-menu {
+  display: none;
+}
+
+
+.bandeau{
+
+  margin-top: 10em;
+}
+
+/* Menu index*/
+
+.item.pair-1{
+
+height: 100%;
+color: white;
+background-color: black;
+}
+
+.item.pair-2{
+
+height: 100%;
+color: white;
+background-color: black;
+
+}
+
+.item.pair-3{
+
+height: 100%;
+color: white;
+background-color: black;
+
+
+
+}
+
+.item.pair-4{
+
+height: 100%;
+color: white;
+background-color: black;
+
+
+
+}
+.container {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  height: 65%;
+}
+.item {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+p {
+  text-align: left;
+  text-indent: 2rem;
+  rag-adjust: small-words;
+  
+}
+
+blockquote {
+  margin-left: 2rem;
+  font-style: italic;
+}
+blockquote > p {
+  text-indent: 0;
+}
+blockquote > p::before {
+  content: "— ";
+}
+
+h1 {
+  border-top: 2px solid;
+  padding-top: 6rem;
+  text-align: center;
+}
+h1 + * {
+  border-bottom: 2px solid;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+.toc li span,
+.toc .toc-total span {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.foot{
+
+  font-size: 80%;
+  font-style: italic;
+}
+
+.footer{
+
+text-align: center;
+  font-size: 60%;
+  font-style: italic;
+}
+.intro{
+
+  font-size: 85%;
+  font-style: italic;
+  color: red;
+  text-indent: 0em;
+}
+
+
+
+h2 {
+  margin-top: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#chapter-1 {
+  border-top: 2px solid;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #F5F8F8;
+ height: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 4rem;
+  font-family: 'Sporting Grotesk';
+font-weight:normal;
+font-style:normal;
+  max-width: 60em;
+  margin: 0 auto;
+  transition: background-color .5s ease;
+}
+
+body.night {
+  background-color: #212121;
+  color: white;
+}
+
+
+#gauche
+{
+background-color:#F00;
+width: 200px;
+float: left;
+
+}
+#milieu
+{
+background-color:#FF0;
+width: 200px;
+float: left;
+}
+#droite
+{
+background-color:#0F0;
+width: 200px;
+float: left;
+}

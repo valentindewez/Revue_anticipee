@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payez l’imprimeur</title>
+	 <link rel="stylesheet" href="./jquery-ui.css">
+       <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="audio.css">
+        <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="aos.css">
+	<meta charset="UTF-8">
+<body>
+    <span id="circle" class="circle"></span>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="sun-moon" class="switch-container">
+  <div class="switch"></div>
+</div>
+  <a href="#">Début</a>
+  <a href="#chapter-2">Préambule</a>
+  <a href="#chapter-3">Interstellar</a>
+  <a href="#img-1">Jour où la Terre s'arrêta</a>
+  <a href="javascript:window.print()">Imprimer</a>
+  <!-- Draggable DIV -->
+<div id="postit" contenteditable="true"><button id="addbutton" contenteditable="false">+</button>
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="postitheader" contenteditable="false">Notes de lecture <input id="delete" contenteditable="false" type="button" value="✕" onClick="removeElement('postit','postit');"></div>
+  <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</div>
+
+</div>
+<!-- Use any element to open the sidenav -->
+<span class="menu" style="cursor: pointer;" onclick="openNav()">Outils de lecture</span>
+<span class="hautpage"  onclick="location.href='#';" style="cursor: pointer;" > &#8613;</span>
+<div class="bandeau">
+<a href="index.html"><h2>Revue_anticipée</h2></a>
+</div>
+<h1>Payez l’imprimeur</h1>
+<p><em>Par Phillip K. DICK</em></p>
+<div class="toc">
+
+<section class="chapter" id="chapter-1">
+
+<h2>  </h2>
+
+<audio id="music" preload="true">
+    <source src="audio/02.mp3">
+    <source src="audio/02.ogg">
+  </audio>
+  <div id="wrapper">
+    <!--Audio Player Interface-->
+    <div id="audioplayer">
+      <button id="pButton" class="play"></button>
+      <div id="timeline">
+        <div id="playhead"></div>
+      </div>
+    </div>
+  </div>
+  <center id="image" class="image">
+<video data-aos="fade-down" alt="Interstellar, Christopher Nolan" width="640" height="360" playsinline autoplay loop controls> <source src="img/Dust-interstellar.mp4"  type="video/mp4">> </video>
+    <img class="img-1" data-aos="fade-right" alt="« Amazing stories », Experimenter Publishing, Ziff Davis" src="img/amazing-stories.jpg">
+<img id="img-1" class="img-2" data-aos="fade-left" alt="Le jour où la Terre s’arrêta, Robert Wise" src="img/jour-ou-la-terre-s-arreta.jpg">
+<img class="img-3" data-aos="fade-right" alt="Le thêatre du siècle, Alconière" src="img/le-theatre-du-siecle-alconiere.jpg">
+<img class="img-4" data-aos="fade-left" alt="Metropolis, Fritz Lang" src="img/metropolis-lang.jpg">
+<img class="img-5" data-aos="fade-left" alt="Le 5ème élément, Luc Besson" src="img/5-element.jpg">
+<img class="img-6" data-aos="fade-right" alt="Les survivants de l’infini, Jack Arnold " src="img/survivant-infini.jpg">
+<img class="img-7" data-aos="fade-left" alt="La guerre des mondes, H. G. Wells" src="img/guerre-des-mondes.jpg">
+<img class="img-10" data-aos="fade-left" alt="L’Invasion des profanateurs de sépultures, Don Siegel" src="img/body-snatchers.jpg">
+<img class="img-9" data-aos="fade-right" alt="Rencontre du 3ème type, Steven Spielberg" src="img/rencontrre-3-type.jpg">
+<img class="img-8" data-aos="fade-left" alt="Planète intedite, Fred M. Wilcox" src="img/planet-interdite.jpg">
+<video class="vid-1" data-aos="fade-down" alt="Scène du singe et de l’outil, 2001, l’odyssée de l’espace, Stanley Kubrick" playsinline autoplay muted loop> <source src="img/monkey-space-odissey.mp4"  type="video/mp4">> </video>
+</center>
+
+<section  id="chapter-2"><p class="intro">Sous ce titre en forme de boutade se cache une des préoccupations primordiales de Philip K. Dick, celle qui trouve un écho jusque dans Au bout du labyrinthe : la difficulté de créer et, plus spécifiquement pour lui, celle d’écrire. Écrire, est-ce reproduire ce que d’autres avant vous ont fait ? Est-ce copier ? Ou est-ce construire une œuvre idéale, Bible des temps modernes, comme le héros d’Un auteur éminent ou les sombres Kalendes de Galactic pot-healer ? Est-ce encore produire un texte si inutile qu’il part en poussière sous les doigts ?
+L’angoisse prend d’habitude la forme d’un thème célèbre : le simulacre, où des êtres artificiels viennent singer la vie sans pouvoir la reproduire. Simulacre de père (le Père truqué), simulacre de pouvoir (Simulacres ; le Bal des schizos (sic.)), simulacre de normalité (Robot blues ; En ce bas monde). Ici nous voyons apparaître pour la première fois (1956) un sous-thème qui sera repris plus tard : l’être capable de reproduire tout objet qui lui est présenté, d’en faire une copie, au premier abord parfaite, mais qui se révèlera dégradée. Nous y trouvons l’ancêtre du tench énigmatique d’Au bout du labyrinthe, dans une histoire où l’auteur pose le problème de la dépendance absolue à une créature providentielle, toute-puissante, parfaitement bonne, mais aliénante. Au lecteur de lire entre les lignes. <h2></h2><h2></h2>
+</p></section>
+<section class="chapter" id="chapter-3"><p>Cendre, noire et désolée, recouvrant les deux côtés de la route. Monticules inégaux à perte de vue — vagues ruines d’immeubles, de villes, d’une <span style="background-color: #ffff66; color: black;">civilisation</span> tout entière. Débris à l’abandon d’une planète corrodée. Particules d’ossements et d’acier transportées par le vent et intimement mélangées au ciment pour former des océans de mortier.
+Allen Fergesson bâilla, alluma une Lucky Strike, et se rencoigna, à moitié endormi, dans le siège au cuir brillant de sa Buick ’57.
+<blockquote>— Sale vision dépressive, commenta-t-il. Un enfer de monotonie</blockquote> <blockquote>— rien que des détritus mutilés. Ça vous en fout un coup. </blockquote>
+<blockquote>— Ne regarde pas, fit d’une voix indifférente la fille assise à côté de lui.</blockquote>
+Puissant et élégant, le véhicule glissait en silence sur la brocaille qui recouvrait la route. Les mains à peine posées sur le volant autoguidé, Fergesson se détendait en écoutant un quintette de Brahms, musique apaisante retransmise par la station-radio de Détroit. La cendre frappait sans discontinuer le pare-brise — une épaisse couche noirâtre s’était déjà déposée malgré le peu de kilomètres parcourus. Mais cela n’avait pas d’importance. Dans la cave de son appartement, Charlotte gardait précieusement un tuyau d’arrosage en plastique vert, un seau en zinc et une grosse éponge.
+<blockquote>— Et vous avez un réfrigérateur plein de bouteilles de scotch de première qualité, continua-t-il tout haut. Si je me rappelle bien. À moins que vos concitoyens assoiffés ne les aient toutes sifflées.</blockquote>
+Près de lui, Charlotte bougea. Elle s’était laissé endormir par le ronronnement lancinant du moteur et la chaleur lourde de l’air.
+<blockquote>— Du scotch ? murmura-t-elle. Eh bien ! J’ai un petit flacon de Lord Calvert...</blockquote>
+Elle se redressa, secouant un nuage de cheveux blonds.
+<blockquote>— … Il est malheureusement assez dégradé.</blockquote>
+Sur le siège arrière, leur passager au long visage réagit. Ils l’avaient embarqué en cours de route ; un homme osseux et décharné en pantalons de travail au tissu gris rugueux, et portant une chemise râpée.
+<blockquote>— Quel état de dégradation ? demanda-t-il d’une voix tendue.</blockquote>
+<blockquote>— À peu près comme tout le reste, répondit-elle.</blockquote>
+Charlotte n’écoutait pas vraiment. Elle fixait d’un regard vague le paysage qui défilait tristement derrière les vitres assombries. Sur la droite se dressaient <span style="background-color: #ffff66; color: black;">les restes</span> déchiquetés et jaunis d’une ville, comme des chicots pourrissants sur fond de ciel fuligineux. Ici une baignoire, là-bas deux poteaux télégraphiques ; des ossements et d’autres fragments livides, perdus sur des kilomètres de résidus grêlés. Scène intensément lugubre. Quelque part au milieu des décombres se terraient des chiens étiques dans des caves assiégées par le froid. Car la sombre brume de cendre empêchait le soleil de réchauffer le sol.
+<blockquote>— Regardez là-bas, dit Fergesson à leur passager.</blockquote> Un faux lapin avait sauté sur le ruban de route. L’automobile dut ralentir pour l’éviter. La pauvre bête aveugle et déformée alla frapper avec violence un bloc de ciment poussé là par les vents, et elle retomba en arrière, étourdie. Elle réussit à ramper sur quelques mètres avant qu’un des chiens ne la dévore.
+<blockquote>— Haaah ! fit Charlotte, révoltée.</blockquote> Elle frissonna et se pencha en avant pour allumer le chauffage. Avec ses jambes minces repliées sous son corps, son tricot de laine rose et sa jupe brodée, c’était une jolie petite personne aux formes attirantes.
+<blockquote>— Je serai contente quand nous aurons enfin atteint ma colonie. Ici c’est un endroit tellement horrible…</blockquote>
+Fergesson tapota la boîte d’acier qui les séparait. Le métal résonnait, ferme et solide sous ses doigts. Et c’était bon de sentir une telle résistance dans un monde en décomposition. II dit :
+<blockquote>— Vos camarades ne seront que trop heureux de nous voir arriver avec ceci, si tout va aussi mal que vous le dites.</blockquote>
+<blockquote>— Oh, oui, approuva Charlotte. La situation est désespérée et je ne sais vraiment pas si notre aide servira à quelque chose. II est à peu près inutile. (Son joli visage lisse se plissa d’inquiétude.) Cela vaut la peine d’essayer, mais je n’ai pas beaucoup d’espoir.</blockquote>
+<blockquote>— Nous remettrons en route votre colonie, la rassura doucement Fergesson.</blockquote> Le plus important c’était de calmer la fille. Un accès de panique pourrait se révéler incontrôlable — avait déjà été incontrôlable plus d’une fois.
+<blockquote>— Mais cela prendra du temps, ajouta-t-il en lui lançant un coup d’œil. Vous auriez dû nous prévenir plus tôt.</blockquote>
+<blockquote>— Nous pensions que c’était seulement un peu de paresse. Mais il s’en va réellement, Allen. (La peur faisait vaciller son regard.) Nous ne pouvons plus rien lui tirer de bon. Il reste prostré comme un gros tas, l’air malade ou… à l’article de la mort.</blockquote>
+<blockquote>— Il est vieux, tout simplement, expliqua gentiment Fergesson. Si je me souviens bien, votre Biltong dure depuis cent cinquante ans.</blockquote>
+<blockquote>— Mais ils sont supposés tenir plusieurs siècles !</blockquote>
+<blockquote>— Leurs dépenses d’énergie sont terribles, fit remarquer le passager qui se passa la langue sur des lèvres sèches et se pencha en avant pour continuer : vous oubliez que ce n’est pas leur milieu naturel. Sur Proxima, ils avaient l’habitude de travailler en groupe. Maintenant, ils se sont brisés en de multiples unités — et la gravité est plus forte sur Terre.</blockquote></section>
+
+<section class="chapter" id="chapter-4">Charlotte hocha la tête, mais elle ne paraissait pas convaincue.
+<blockquote>— Mon Dieu ! fit-elle dans une plainte. Mais c’est immonde, regardez plutôt !</blockquote>
+Elle fouilla la poche de son tricot et en sortit un objet de la taille d’une pièce d’un franc.</blockquote>
+<blockquote>— Tout ce qu’il imprime est maintenant de cette taille — ou pire.</blockquote>
+Fergesson prit la montre et l’examina, un œil sur la route. Le bracelet s’effrita entre ses doigts comme une feuille desséchée, ne laissant que de minuscules fragments cassants d’une matière sombre et fibreuse, sans élasticité. L’aspect extérieur de la montre semblait normal — mais les aiguilles ne bougeaient pas.
+<blockquote>— Elle ne marche pas, expliqua Charlotte. Elle la lui arracha et l’ouvrit. Vous voyez ? (Elle lui fourra le mécanisme sous le nez, les lèvres carminées pleines de dégoût.) J’ai fait une demi-heure de queue pour obtenir cette saleté, ce truc informe.</blockquote>
+Les rouages de la petite montre suisse étaient une masse fusionnée d’acier brillant. Ni roues dentées, ni rubis, ni ressorts, juste un conglomérat luisant.
+<blockquote>— Qu’avait-il comme modèle ? Demanda l’homme sur le siège arrière. Un original ?</blockquote>
+<blockquote>— Une copie — mais une bonne. Qui datait de trente-cinq ans. Sa propre œuvre. Elle appartenait à ma mère. Vous devinez certainement mon état en voyant apparaître ce machin ? Un bibelot inutile. (Charlotte reprit la copie et la remit en place.) J’étais tellement furieuse… que… (Elle s’arrêta brusquement de parler et se redressa, figée.) Oh, nous y sommes. Vous voyez renseigne de néon rouge ? Elle marque l’entrée de la colonie.</blockquote>	L’enseigne annonçait : STATION-SERVICE en couleurs bleue, rouge et blanche — structure immaculée au bord de la route. Immaculée ? Fergesson ralentit la voiture en passant devant la pompe à essence. Ils ouvraient grand les yeux, se préparant au choc qu’ils savaient maintenant proche.
+<blockquote>— Je vous l’avais dit, fit Charlotte d’une voix faible, à la limite de se briser.</blockquote>
+La station-service tombait en morceaux. La petite bâtisse blanche croulait de vieillesse — elle était usée, <span style="background-color: #ffff66; color: black;">chose corrodée</span>, incertaine, qui s’affaissait, se recroquevillait comme une relique flétrie. Le grand néon rouge clignotait, pris de folie. Les pompes étaient rouillées et penchées sur le côté. La structure toute entière avait commencé à retourner à la cendre, aux particules noires en suspension dans l’atmosphère, à la poussière dont elle était un jour sortie. Un frisson de mort passa sur Fergesson fasciné par la vision cruelle d’une matière en perdition. Dans sa propre colonie, la dégradation n’existait pas ou pas encore. Les copies étaient remplacées, aussitôt qu’usées, par le Biltong de Pittsburg. De nouveaux simulacres étaient formés à partir des objets originaux préservés de la guerre. Mais, ici, les duplicata disparaissaient sans trouver de successeur.
+Il ne servait à rien de chercher un bouc émissaire à blâmer. Comme toute race, les Biltongs avaient leurs limites. Ils avaient fait de leur mieux — écrasés par un environnement étranger.
+Ils étaient probablement originaires du système du Centaure. On les avait vu apparaître soudain vers la fin du conflit, attirés par les éclairs des bombes à hydrogène. Ils avaient trouvé une race humaine agonisante, occupée à ramper dans la cendre charbonneuse radioactive, pour tenter de sauvegarder quelques miettes de sa culture.
+Après une période d’observation et d’analyse, le Biltong homogène s’était dispersé en unités individuelles et s’était attaché à la grande œuvre qui consistait à reproduire un double exact de tout objet qu’on lui présentait. C’était tout simplement leur mode de survie à eux — sur leur planète. Ils avaient créé ainsi une membrane protectrice d’environnement stable, face à un <span style="background-color: #ffff66; color: black;">monde hostile</span>. Ils n’avaient plus arrêté depuis.
+À l’une des pompes à essence, un homme essayait de remplir le réservoir de sa Ford ’66. Insultant le monde entier, de toutes ses forces inutiles il arracha le tuyaû pourrissant. Un fluide terne, couleur ambre, commença à inonder le sol et à s’infiltrer dans le gravier plein de cambouis. La pompe elle-même crachait son contenu par une douzaine de blessures. Soudain, une autre, située un peu plus loin, s’effondra en une masse de métal humide. La scène n’avait pas pris plus de quelques secondes.
+Charlotte baissa la vitre de l’automobile.
+<blockquote>— La station Shell est en meilleur état. Oh ! À l’autre bout de la ville.</blockquote>
+L’homme, au visage lourd, se tenait courbé, rouge et transpirant.
+<blockquote>— Merde ! murmura-t-il. Je n’arrive pas à en tirer une goutte. Pouvez-vous me faire profiter de votre voiture ? Je remplirai un seau à l’autre pompe.</blockquote>
+Fergesson ouvrit la portière d’une main tremblante.
+<blockquote>— Tout est aussi dégradé par ici ?</blockquote>
+<blockquote>— C’est encore pire ailleurs.</blockquote>
+Ben Untermeyer s’assit avec reconnaissance sur le siège offert comme la Buick repartait en ronflant.
+<blockquote>— Regardez par là.</blockquote>
+Une épicerie s’était écroulée en un monticule de béton éclaté et d’acier tordu. Les vitrines s’étaient pulvérisées. Il y avait de la nourriture jusque dans la rue, que les passants tentaient de récupérer. On les voyait, les bras chargés, se frayer un passage dans les décombres. Les visages étaient sombres et rageurs.
+La chaussée elle-même était très dégradée, pleine de fissures, de trous profonds. Le bord du trottoir partait en miettes blanchâtres. Une fontaine cassée vomissait une eau bourbeuse dans une mare grandissante. Les magasins et les véhicules des deux côtés de la rue semblaient prêts à s’affaisser sous le poids de la poussière et de la <span style="background-color: #ffff66; color: black;">vétusté</span>. Tout avait d’ailleurs un aspect sénile. Quelqu’un avait essayé de maintenir debout la boutique d’un cireur avec des morceaux de bois et des chiffons enfoncés dans les trous béants. Mais l’enseigne chancelante et délavée allait vers sa fin prochaine. Dans un café dégoûtant se tenaient deux seuls clients en costume râpé qui essayaient de conserver leurs habitudes : lire le journal tout en buvant un café pisseux dans des tasses fêlées dégoulinantes de liquide immonde quand ils les levaient de sur le comptoir vermoulu.
+
+— Ça ne durera plus très longtemps, murmura Untermeyer en s’essuyant le front. Pas à ce rythme de dégradation. Les gens n’osent même pas entrer dans les théâtres de peur qu’ils ne s’écroulent sur leur tête. Pareil pour les cinémas : les films cassent constamment et les couleurs jaunissent pendant la projection.
+Il jeta un coup d’œil de curiosité sur l’homme maigre, à la mâchoire visible sous la peau, qui était assis près de lui, silencieux.
+<blockquote>— Je m’appelle Untermeyer, grommela celui-ci. Ils se serrèrent la main.</blockquote>
+<blockquote>— John Dawes, répondit le personnage vêtu de gris, sans fournir plus d’explication. Il n’avait pas dû dire plus de cinquante mots depuis que Fergesson et Charlotte l’avaient cueilli sur le bord de la route.
+Untermeyer sortit de sa poche de manteau un journal enroulé et l’envoya sur le siège avant, à côté de Fergesson.</blockquote>
+<blockquote>— Regardez ce que j’ai trouvé devant ma porte, ce matin.</blockquote>
+Le journal n’était qu’un ramassis de mots sans suite et souvent insensés. Une vague mélasse de lettres brisées étaient imprimées avec une encre coupée d’eau qui n’avait pas encore séché et qui s’étalait en rivières plus ou moins teintées ; cela traçait une carte géographique totalement bizarre de ces régions différemment délavées. Fergesson parcourut rapidement le texte, mais c’était inutile. Des récits confus se perdaient dans une mare d’encre au détour d’une phrase ; d’énormes manchettes proclamaient des nouvelles démentes.
+<blockquote>— Allen nous apporte des originaux, dans la boîte métallique que vous voyez là, expliqua Charlotte.</blockquote>
+<blockquote>— Ils ne serviront à rien, répondit Untermeyer d’une voix <span style="background-color: #ffff66; color: black;">lugubre</span>. Il n’a pas bougé de tout ce matin. J’ai fait la queue avec un grille-pain dont je voulais une copie. Des clous. Je revenais chez moi lorsque ma voiture a commencé à se désagréger. J’ai ouvert le capot, mais qui sait comment marchent ces moteurs ? Ce n’est pas notre affaire. J’ai insisté et mon véhicule a daigné se traîner jusqu’ à la station-service… Mais la carosserie est devenue si fine que mon pouce la traversait.</blockquote>
+Fergesson arrêta son automobile devant la grosse résidence blanche où habitait Charlotte. Il mit un moment à la reconnaître tellement elle avait changé depuis sa visite du mois précédent. On avait monté tout autour un échafaudage en bois branlant, visiblement l’œuvre d’amateurs. Quelques travailleurs allaient et venaient d’une démarche hésitante devant la façade qui commençait à s’écrouler. L’immeuble tout entier s’enfonçait lentement sur le côté. D’énormes fissures zébraient les murs, se regroupant parfois pour tracer un canyon échancré. Des plaques de plâtre jonchaient le sol. Le trottoir plein d’immondices qui faisait face à la maison s’était fendu et l’on pouvait apercevoir en dessous la cendre ubiquitaire qui était le passé et le futur de ces lieux.
+<blockquote>— Nous ne pouvons rien faire par nous-mêmes, se plaignit Untermeyer d’un ton irrité. Nous devons rester tranquillement là à regarder notre univers sombrer. S’il ne revient pas bientôt à la vie…</blockquote>
+<blockquote>— Tout ce qu’il a imprimé les premiers temps retourne à la <span style="background-color: #ffff66; color: black;">poussière</span>, usé, dit Charlotte en ouvrant la portière pour descendre. Et tout ce qu’il produit maintenant est informe, une sorte de pudding flasque. Qu’allons-nous faire ? (Elle frissonna dans le soleil glacial de midi.) J’ai peur que nous ne soyions condamnés à subir le sort de la colonie de Chicago.
+La phrase les figea tous les quatre. Chicago, la colonie qui s’était écroulée ! Le Biltong qui fonctionnait là-bas avait vieilli, puis était mort. Epuisé, il s’était transformé en une montagne silencieuse de matière inerte. Les maisons, les rues, les véhicules, tous les objets qu’il avait reproduits étaient graduellement retournés à la cendre après un parcours épouvantable qui les avait vus se désagréger en particules noirâtres.
+<blockquote>— Il n’a pas pu continuer, chuchota Charlotte, terrorisée. Il s’est usé au travail et puis, sans prévenir il est mort.</blockquote>
+Après un silence, Fergesson dit d’une voix rauque !</blockquote>
+<blockquote>— Mais ses congénères s’en sont aperçu. Ils ont envoyé un remplaçant dès qu’ils ont pu.</blockquote>
+<blockquote>— C’était trop tard ! rugit Untermeyer. La colonie était déjà morte. Sauf peut-être un ou deux survivants qui se traînaient complètement nus dans la cendre, gelés et demi-morts de faim. Squelettes pourchassés par les chiens. Les saloperies de chiens venus de partout participer au festin !</blockquote>
+Ils s’étaient regroupés sur le trottoir dégradé, effrayés et pleins d’appréhension. Même le visage de John Dawes était marqué par l’horreur, par une peur qui taraudait la chair. Fergesson pensait avec regret à sa propre « ville », à quelques kilomètres à l’est. Le Biltong de Pittsburg était tout jeune — plein d’énergie virile ; il dépensait sans compter les talents créatifs de sa race. Rien à voir avec cette horreur !
+Les constructions de la colonie Pittsburg se dressaient, solides et sans défaut. Les trottoirs à la propreté scrupuleuse ne s’effondraient pas sous le poids des passants. Dans les vitrines brillamment illuminées ; les télévisions, les mixers, les grille-pains, les bouteilles de whisky, les pêches confites, et les automobiles, et les pianos, et les vêtements, s’étalaient prêts à lu vente, copies parfaites des originaux, reproductions détaillées, authentiques, impossibles à distinguer des modèles conservés sous vide dans des abris souterrains.
+<blockquote>— Si votre espace de survie disparaît, certains d’entre vous pourront peut-être venir vivre avec nous, proposa Fergesson mal à l’aise.</blockquote>
+<blockquote>— Votre Biltong pourrait-il produire pour plus de cent personnes ? demanda doucement John Dawes.</blockquote>
+<blockquote>— Pour l’instant, il en est très capable, répondit Fergesson. (Il montra sa Buick avec fierté.) Vous êtes monté dedans, vous savez ses qualités. Presque aussi bonnes que celles de l’original dont elle est la copie. Il faudrait qu’ils soient mis côte à côte pour remarquer des différences. Il eut un large sourire satisfait et risqua une vieille plaisanterie.</blockquote>
+<blockquote>— Je me suis peut-être enfui avec la vraie.</blockquote>
+<blockquote>— Nous n’avons pas à décider aujourd’hui, intervint Charlotte sèchement. Il nous reste bien encore un peu de temps. (Elle prit la boîte d’acier sur le siège et se dirigea vers le perron de son immeuble.) Accompagnez-nous, Ben. (Elle fit un signe de la tête à Dawes.) Vous aussi. Venez prendre une rasade de whisky. Il n’a pas trop mauvais goût — quelque chose qui rappelle l’antigel — et l’étiquette n’est plus lisible — mais à part ça, il n’est pas trop dégradé.</blockquote>
+Un homme l’intercepta comme elle posait le pied sur la première marche.
+<blockquote>— Il est interdit de monter, Madame.</blockquote>
+Charlotte se figea, le visage livide de colère et de consternation.
+<blockquote>— Mon appartement est ici ! Toutes mes affaires ! Je vis dans cette maison !</blockquote>
+<blockquote>— L’immeuble n’est pas sûr, expliqua le travailleur. Ce n’était pas vraiment un ouvrier, plutôt un des habitants de la ville, volontaire pour surveiller les constructions trop détériorées.</blockquote>
+<blockquote>— Regardez les fissures. Cela fait des semaines qu’elles sont là.</blockquote>
+D’un geste impatient, Charlotte pria Fergesson d’avancer.
+<blockquote>— Venez.</blockquote>
+Elle sauta d’un pas alerte sur l’escalier et tendit la main pour ouvrir la grande porte d’entrée en verre et chrome.
+La porte sortit de ses gonds et s’écroula, éclatant en parcelles charbonneuses. Le verre éclatait partout autour d’elle, envoyant des nuages d’échardes mortelles. Charlotte hurla et retomba en arrière. Le ciment se désagrégea sous son poids, ses talons s’enfonçaient comme dans de la boue. Dans un grondement, le porche tout entier s’effondra en une giclée poudreuse. La seconde suivante, il ne restait plus qu’une masse informe de particules désagrégées dont une grande partie restait encore en suspension dans l’atmosphère.
+Fergesson et l’ouvrier attrapèrent à bras-le-corps la fille qui se débattait dans les vagues de poussière de ciment. Untermeyer cherchait désespérément la boîte de métal ; ses doigts se refermèrent enfin dessus et il la traîna jusque sur le trottoir.
+Se frayant un passage à travers les ruines décomposées du porche, Fergesson et ses deux compagnons regagnèrent eux aussi la relative sécurité de la rue.
+Charlotte essayait de parler, le visage déformé de soubresauts hystériques.
+<blockquote>— Tous mes objets…, parvint-elle à murmurer.</blockquote> 
+Fergesson l’épousseta d’une main tremblante.
+<blockquote>— Où êtes-vous blessée ? Vous allez bien ?</blockquote>
+<blockquote>— Je n’ai rien.</blockquote>
+Charlotte essuya une tache rose de sang et de poudre sur son visage. Elle avait une coupure à la joue et ses cheveux blonds n’étaient plus qu’une masse pâteuse. Son tricot de laine pendait en chiffons et sa jupe ne valait pas mieux.
+<blockquote>— La boîte… vous l’avez récupérée ?</blockquote>
+<blockquote>— Oui, tout va bien de ce côté, répondit John Dawes d’une voix impassible. Il n’avait pas bougé d’un centimètre de sa position près de la voiture.</blockquote>
+Charlotte s’agrippa à Fergesson — il sentait contre lui son corps trembler de peur et de désespoir.
+<blockquote>— Regardez…, murmurait-elle. Regardez mes mains. Elle tendait ses bras recouverts d’une pellicule blanchâtre.</blockquote>
+<blockquote>— Tout devient noir.</blockquote>
+La poudre avait commencé à s’assombrir. Pendant ce temps même qu’ils regardaient, elle devint grise, puis noire comme de la suie. Les vêtements déchirés de la fille se flétrirent et se racornirent lentement. Comme un tégument desséché, les lambeaux de tissus se fendirent et tombèrent sur le sol.
+<blockquote>— Montez dans la voiture, lui ordonna Fergesson. Vous y trouverez une couverture provenant de ma colonie.</blockquote>
+Untermeyer et lui s’empressèrent d’envelopper la fille dans la lourde couverture de laine. Charlotte se rencoigna dans le siège, les yeux terrorisés ; des gouttes de sang vermillon glissaient sur sa joue pour aller tacher sa couverture protectrice, à rayures bleues et jaunes. Fergesson alluma une cigarette qu’il lui introduisit entre les lèvres tremblantes.
+<blockquote>— Merci.</blockquote>
+Elle parvint à émettre un gémissement reconnaissant et commença à fumer.
+<blockquote>— Allen, qu’allons-nous bien pouvoir faire ?</blockquote>
+Fergesson brossa doucement la poudre noirâtre des cheveux blonds de la fille.
+<blockquote>— Nous allons reprendre la voiture et aller lui montrer les originaux. Il peut faire peut-être quelque chose. Les Biltongs sont toujours excités à la vue de choses nouvelles à imprimer. Nos offrandes le rendront peut-être à la vie.</blockquote>
+<blockquote>— Mais il ne dort pas, rétorqua Charlotte, choquée.
+Il est mort, Allen, je le sais.</blockquote>
+<blockquote>— Pas encore, protesta Untermeyer d’une voix épaisse. Mais tous ressentaient l’imminence de la catastrophe dans leur monde interne.</blockquote>
+<blockquote>— S’est-il reproduit ? demanda Dawes.</blockquote>
+Le visage de Charlotte leur fournit la réponse.
+<blockquote>— Il a essayé. Quelques œufs ont pu éclore, mais les petits Biltongs n’ont pas survécu. J’ai vu des œufs disséminés autour de lui, mais…</blockquote>
+Elle s’arrêta. Ils savaient tous ce qu’elle voulait dire. Les Biltongs étaient devenus stériles dans leur combat pour garder la <span style="background-color: #ffff66; color: black; color: black;">race humaine</span> en vie. Œufs desséchés, progéniture mort-née…
+Fergesson se glissa au volant et claqua la porte avec rage. La portière ne fermait pas bien. Le métal était un peu déformé — ou peut-être était-ce un défaut d’origine ? Ses poils se hérissèrent. Lui aussi possédait une copie imparfaite — un élément microscopique, sans importance, gauchi pendant le processus de duplication. Même sa belle, sa luxueuse Buick était dégradée. Le Biltong de sa colonie commençait lui aussi à s’user. Autour du jardin public s’alignaient des rangées silencieuses et immobiles d’automobiles. Des gens s’entassaient partout. La colonie devait pratiquement être là au complet. Chacun avait un objet qui demandait à être renouvelé d’urgence. Fergesson éteignit le moteur et mit les clefs dans sa poche.
+<blockquote>— Vous pouvez supporter ? demanda-t-il à Charlotte. Vous feriez peut-être mieux de rester dans la voiture.</blockquote>
+<blockquote>— Ça va aller, répondit-elle en essayant de sourire.</blockquote> Elle avait enfilé une chemisette de sport et un pantalon de survêtement que Fergesson avait trouvés dans les ruines d’un magasin de vêtements complètement délabré. Il n’en ressentait pas de culpabilité — de nombreux hommes et femmes déambulaient tristement au milieu du stock éparpillé sur le trottoir, prenant de-ci de-là les articles les moins dégradés. Ils leur dureraient bien quelques jours.
+Fergesson avait pris tout son temps pour choisir les vêtements de Charlotte. li avait trouvé dans l’arrière-boutique une pile de chemisettes d’aspect robuste et des survêtements convenables qui semblaient encore loin de leur destin cendreux. Copies récentes ? Ou, peut-être — aussi incroyable que cela paraisse — des originaux gardés là par les propriétaires pour des copies futures. Dans une boutique de chaussures encore en activité, il trouva une paire de mocassins à talons plats. Charlotte portait sa propre ceinture — celle qu’il avait choisie était tombée en poussière lorsqu’il avait tenté de la lui mettre.
+Untermeyer tenait la boîte de métal des deux mains, pendant qu’ils approchaient tous quatre du centre du jardin. Les gens alentour restaient silencieux, le visage lugubre. Personne ne parlait à son voisin, chacun portant sur lui quelque article, original soigneusement préservé du dommage des siècles ou bonnes copies aux imperfections mineures. La lutte entre l’espoir et la peur, et l’approche de la désillusion se lisaient dans leur rictus.
+<blockquote>— Les voici, fit Dawes qui traînait derrière. Les œufs morts.</blockquote>
+Dans un bosquet, à une extrémité du parc, s’amoncelait une série de grains bruns-gris, de la taille d’un ballon de basket, durs et calcifiés. Quelques-uns étaient brisés. Des fragments de coquilles couvraient le sol.
+Untermeyer donna un coup de pied dans un des œufs qui éclata en parcelles <span style="background-color: #ffff66; color: black;">diaphanes</span>, vide de toute présence.
+<blockquote>— Il a dû être sucé par quelque animal, jusqu’à n’en laisser que la coquille suggéra-t-il. Nous sommes les témoins des derniers jours, Fergesson. Les chiens doivent parvenir maintenant à se glisser la nuit jusqu’ici et à les attraper. Il est trop faible pour les protéger.</blockquote>
+Un sourd courant de mécontentement parcourait la foule assemblée. Leurs yeux étaient rougis de colère, colère d’avoir attendu trop longtemps. Tous portaient leurs objets les plus précieux serrés contre eux ; ils étaient compressés en une masse solide, cercle impatient et indigné d’une humanité qui entourait le jardin. Ils avaient attendu longtemps. Ils étaient fatigués d’attendre.
+<blockquote>— Qu’est-ce que c’est que cette saloperie ?</blockquote>
+Untermeyer s’accroupit devant une forme vague laissée à l’abandon sous un arbre. Il fit courir ses doigts sur le tas de métal indistinct. L’objet semblait avoir fondu, ses parties s’étant mélangées comme de la cire sous la flamme — rien n’était intact.</blockquote>
+<blockquote>— Je n’arrive pas à reconnaître ce que c’est.</blockquote>
+<blockquote>— C’est la tondeuse à gazon, intervint un homme morose qui passait tout près.</blockquote>
+<blockquote>— Cela fait combien de temps qu’il l’a imprimée ? demanda Fergesson.</blockquote>
+<blockquote>— Quatre jours. (L’homme frappa la masse inerte avec une hostilité rageuse.) On n’arrive même pas à dire ce que c’est — cela pourrait être n’importe quoi. Ma vieille tondeuse s’est cassée. Alors, j’ai fait rouler l’original de la colonie jusqu’ici et j’ai fait une journée de queue. Voici ma récompense. (Il cracha par terre, plein de rancœur.) Ça ne vaut pas un clou. Je l’ai laissée rouiller dans l’herbe — quelqu’un la prendra bien pour une statue d’art moderne. Mon université avait quelque chose comme cela devant sa porte avant la guerre ; les Biltongs avaient dû lui faire un de leurs beaux cadeaux.</blockquote>
+Sa femme émit une sorte de gémissement de métal strident.
+<blockquote>— Qu’allons-nous faire ? Nous ne pouvons plus utiliser la vieille. Elle tombe en morceaux comme tout le reste. Si les nouvelles copies ne servent à rien, que…</blockquote>
+<blockquote>— Tais-toi, hurla son mari, une expression laide sur le visage. Ses doigts aux longues phalanges tenaient un morceau de tuyau. Nous attendrons encore un peu. Il redeviendra peut-être comme avant.</blockquote>
+Un murmure d’espoir courut comme une vaguelette dans la foule. Charlotte frissonna et continua à avancer en poussant les gens.
+<blockquote>— Je ne le blâme pas, dit-elle à Fergesson. Mais... (Elle secoua la tête en une mimique fataliste.) À quoi cela servira-t-il, s’il ne veut plus produire des copies de valeur.</blockquote>
+<blockquote>— Il ne peut pas, intervint John Dawes. Observez-le !</blockquote>
+Il s’ arrêta et les retint un moment.
+<blockquote>— Regardez-le et dites-moi comment il pourrait en faire plus.</blockquote>
+Le Biltong mourait. Immense et vieux, il restait accroupi au centre de la colonie, tas de protoplasme jauni, épais, gommeux, opaque. Ses pseudopodes s’étaient flétris, racornis jusqu’à n’être plus que des vipères noires qui dormaient, inertes, sur l’herbe desséchée. En son centre, la masse immobile semblait étrangement effondrée sur elle-même. La créature s’affaissait lentement, tandis que l’humidité quittait ses veines brûlées par le soleil malingre.
+<blockquote>— Mon Dieu ! murmura Charlotte. Il a l’air si mal en point !</blockquote>
+La masse centrale du Biltong ondulait faiblement. Des boursouflures maladives palpitaient sur son corps qui tentait désespérément de s’accrocher à la vie déclinante. Des mouches s’affairaient en grands essaims luisants noirs et bleus autour de la chair pourrissante. Une odeur lourde de matière organique en putréfaction entourait d’ailleurs le Biltong d’une puanteur fétide. Une mare de liquide saumâtre se formait sous le grand corps d’où suintait du pus goutte à goutte.
+À travers le protoplasme jaune de la créature on pouvait voir le noyau solide de tissus nerveux pulser sous la souffrance en mouvements intenses qui envoyaient des ondes en vagues sous le tissu inerte. La myéline des nerfs dégénérait à vue d’œil en granules calcifiés. Vieillesse, dégradation… et souffrance.
+Devant le Billong à l’agonie, sur une plate-forme de ciment, attendait un amoncellement d’originaux à reproduire. Près d’eux, quelques copies avaient commencé à prendre forme, boules de cendre noirâtre mélangée de fluide Biltong, le jus patiemment sécrété qui lui permettait le processus de duplication. Mais le Biltong avait arrêté son travail à peine commencé pour retirer ses rares pseudopodes encore en vie dans la masse principale. Il se reposait — et tentait de ne pas mourir. — Pauvre chose délabrée ! s’entendit dire Fergesson. Elle ne peut plus continuer.
+<blockquote>— Ça fait bien six heures qu’il est comme ça à ne rien faire, cria une femme dans son oreille. Tranquillement assis ! Qu’espère-t-il nous· réduire à faire ? Nous aplatir sur le sol pour l’implorer de continuer ?
+Dawes se retourna vers elle, furieux.</blockquote>
+<blockquote>— Espèce d’imbécile, ne voyez-vous pas qu’il est en train de mourir ? Laissez-le en paix, pour l’amour de Dieu !</blockquote>
+Un grondement menaçant parcourut la foule. Des visages se retournaient vers Dawes — mais il affecta de ne pas les voir. À ses côtés, Charlotte s’était figée, raide comme un écouvillon, les yeux écarquillés d’horreur.
+<blockquote>— Faites attention, prévint Untermeyer dans un murmure. La plupart d’entre eux ont un besoin absolu de copies rapides. Certains viennent même chercher de la nourriture.</blockquote>
+<span style="background-color: #ffff66; color: black;">Le temps manquait</span>. Fergesson agrippa la boîte métallique, l’arracha des mains d’Untermeyer, et l’ouvrit violemment. Il retira les originaux avec précautions et les étala sur l’herbe devant lui.
+Devant la merveilleuse vision, il y eut un murmure d’étonnement et de respect qui fit se rengorger de satis faction Fergesson. Il possédait les originaux dont la colonie manquait tellement. Ici, il n’existait que des copies imparfaites. Et le travail d’imprimerie ne pouvait s’effectuer qu’à partir de modèles de seconde classe, bourrés de défauts. Un à un, il rassembla les précieux originaux et s’avança vers la plate-forme qui faisait face au Biltong. On essayait de lui bloquer le passage, de l’empêcher de sauter des places, mais la colère cédait bientôt devant les originaux qu’il portait religieusement.
+Il déposa avec précaution un briquet en argent massif de marque Ronson. Puis un microscope Bausch et Lomb encore recouvert de son cuir noir d’origine. Une cellule à aimant mobile, haute-fidélité, de chez Pickering. Et une coupe en cristal chatoyant, Steuben.
+<blockquote>— Voilà de bien beaux originaux, fit remarquer un de ses voisins d’une voix envieuse. Où les avez-vous trouvés ?</blockquote>
+Fergesson ne répondit pas. Il observait le Biltong moribond.
+L’être n’avait pas bougé, mais il avait aperçu les nouveaux originaux ajoutés à la pile imposante. Dans le protoplasme flasque, le noyau fibreux vibrait plus vite. L’orifice frontal frémit, puis s’ouvrit largement. Une marée de violence fouetta le vieux corps, puis des bulles rances de liquide commencèrent à sortir de l’ouverture, suivies d’un pseudopode mince à l’aspect fragile qui frémit, avança difficilement sur l’herbe boueuse, hésita pour atteindre rapidement le Steuben.
+Il forma un tas de cendre noire qu’il aspergea de liquide pris dans la cavité. Peu à peu se constituait une sorte de globe terne, grotesque parodie du verre translucide. Le Biltong vacilla et ramena à lui ses excroissances afin de reprendre des forces. Après quelques secondes, il fit une seconde tentative aussi lamentable. Alors, brusquement, sans un signe avant-coureur, la masse tout entière frémit violemment et le pseudo pode retomba à terre, épuisé… Il se contracta, parcouru de petits spasmes, hésita en un balancement pathétique, puis se retira dans la forme centrale.
+<blockquote>— Ça ne sert à rien, fit Untermeyer d’une voix rauque. Il n’y arrive pas. Il est trop tard.</blockquote>
+Les doigts raides et maladroits, Fergesson récupéra ses originaux et les remit dans leur boîte en tremblant.
+<blockquote>— Je me suis donc trompé, murmura-t-il en se relevant. Je croyais vraiment que ces objets renverseraient la tendance. Mais je n’avais pas réalisé l’étendue de la catastrophe.</blockquote>
+Charlotte, traumatisée, s’éloigna de la plate-forme comme un <span style="background-color: #ffff66; color: black;">automate</span> muet. Untermeyer la suivit au milieu des conglomérats d’hommes en colère, de femmes rageuses, qui convergeaient vers le Biltong.
+Fergesson attendit dans un silence consterné pendant que Dawes fouillait dans sa chemise grise et rugueuse pour sortir bientôt un objet enrobé de vieux papiers-journaux. C’était une coupe, une coupe de bois, grossière et mal taillée. Il eut un étrange sourire sardonique lorsqu’il plaça l’objet devant le Biltong.
+Charlotte observait, vaguement intriguée.
+<blockquote>— Que faites-vous ? À quoi cela servirait-il s’il arrivait à copier cela ? C’est si simple que vous pourriez le refaire vous-même.</blockquote>
+Elle tapota la coupe rudimentaire avec l’extrémité de son mocassin.
+Fergesson sursauta. Dawes intercepta son regard. Un instant les deux hommes se firent face. Dawes, un petit sourire aux lèvres, Fergesson, tendu par la compréhension qui montait en lui.
+<blockquote>— C’est absolument exact. C’est moi qui l’ait fait.</blockquote>
+Pergesson s’empara de la coupe qu’il tourna et retourna dans sa main tremblante.
+<blockquote>— Vous l’avez fait avec quoi ? Je ne comprends pas ! Quelle est votre matière première ?</blockquote>
+<blockquote>— Nous avons coupé quelques arbres.</blockquote>
+Il détacha de sa ceinture quelque chose aux reflets métalliques, lueur terne dans le soleil anémique.
+<blockquote>— Tenez, faites attention de ne pas vous couper avec.</blockquote>
+Le couteau était aussi primitif que la coupe : martelé, tordu, maintenu à un manche par du fil de fer.
+<blockquote>— Vous avez fait ce couteau ? demanda Fergesson, stupéfait. Je ne puis y croire. Par quoi commencez-vous ? C’est impossible ! Il vous faut des outils pour construire ceci. C’est un véritable· paradoxe !</blockquote>
+Sa voix montait sous l’effet de l’excitation.
+Charlotte se détourna de l’instrument avec un geste découragé.
+<blockquote>— Votre couteau ne sert à rien ; impossible de couper quelque chose avec.
+Triste et pathétique, elle ajouta :</blockquote>
+<blockquote>— Dans ma cuisine, j’avais toute une série de couteaux à découper en acier inoxydable, le meilleur acier suédois. Il n’en reste plus aujourd’hui qu’un tas de cendres noires.</blockquote>
+Un million de questions bouillonnaient dans l’esprit de Fergesson.
+<blockquote>— Cette coupe, ce couteau, vous êtes-vous regroupés les produire ? Et ce tissu que vous portez, est-il tissé main ?</blockquote>
+<blockquote>— Venez, fit brusquement Dawes.</blockquote>
+Il ramassa les objets déposés et entreprit de s’éloigner rapidement de la plate-forme.
+<blockquote>— Nous ferions mieux de foutre le camp, la fin est proche.</blockquote>
+Des gens commençaient à quitter le jardin. Ils abandonnaient le combat, partant fouiller les détritus, retourner les décombres des magasins en quête d’aliments encore solides. Quelques voitures toussotèrent, encore en vie et s’éloignèrent en brinquebalant.
+Untermeyer mouillait nerveusement ses lèvres flasques. Sa peau terreuse était toute marbrée, creusée par la terreur.
+<blockquote>— Ils deviennent incontrôlables, murmura-t-il à Fergesson. La <span style="background-color: #ffff66; color: black;">colonie</span> tout entière s’écroule. Dans quelques heures il ne restera plus rien. Pas un aliment, pas un mur pour dormir à l’abri !</blockquote>
+Ses yeux se posèrent un bref instant sur la voiture, puis perdirent toute expression.
+Il n’était pas le seul à avoir remarqué le véhicule. Un groupe de personnes, le visage sombre, se formait lentement autour de la massive Buick poussiéreuse. Comme des enfants hostiles et avides, ils la touchaient, examinant ses pare-chocs, sa carrosserie, palpant les phares, les pneus bien robustes. Ils portaient des armes rudimentaires — morceaux de tuyauterie, grosses caillasses, sections de métal tordu arrachées des immeubles écroulés.
+<blockquote>— Ils sentent qu’elle ne vient pas de la colonie, fit Dawes. Qu’elle va s’en aller en les laissant derrière.</blockquote>
+<blockquote>— Je peux vous amener à Pittsburg, dit Fergesson à Charlotte. (Il pressa le pas.) Je vous déclarerai comme ma femme. Vous pourrez décider plus tard si vous désirez légaliser notre union.</blockquote>
+<blockquote>— Et Ben ? demanda Charlotte d’une voix faible.</blockquote>
+<blockquote>— Je ne peux pas l’épouser aussi. (Il augmenta encore son allure.) Je peux l’emmener là-bas, mais ils ne le laisseront pas demeurer. Ils suivent le système des quotas. Plus tard, lorsqu’ils comprendront l’étendue du désastre…</blockquote>
+<blockquote>— Dégagez le passage, fit Untermeyer au cordon de personnes en prenant un air menaçant. Après un moment d’incertitude, les hommes se retirèrent à contrecœur pour se rassembler un peu plus loin, le regard envieux. Untermeyer se tint près de la porte, le grand corps en alerte.</blockquote>
+<blockquote>— Amenez-la, et faites attention ! ordonna-t-il à Fergesson.</blockquote>
+Fergesson et Dawes encadrèrent Charlotte et se frayèrent un passage à travers le barrage humain. Fergesson donna alors la clef de contact à Untermeyer et le gros homme ouvrit la portière avant. II poussa Charlotte à l’intérieur et fit signe à Fergesson de monter de l’autre côté rapidement.
+La foule se réveilla tout d’un coup.
+D’un coup de son large poing, Untermeyer renvoya le premier attaquant s’écraser sur les suivants. Il passa du côté de Charlotte pour se mettre au volant avec autant de hâte que de difficultés. Le moteur démarre avec un gémissement. Untermeyer passa la première et enfonça l’accélérateur d’un coup de pied sauvage. La voiture fit un bond en avant ; des hommes étaient agrippés à sa carrosserie ou bien essayaient d’atteindre la portière encore ouverte ; les occupants étaient apeurés.
+Untermeyer claqua la porte sans lâcher le volant et la bloqua. Fergesson eut une dernière vision du gros homme, le visage déformé par la panique, tandis que la voiture gagnait de la vitesse.
+Des gens essayaient vainement de se raccrocher à la tôle glissante. Ils allèrent s’écraser un à un sur la chaussée. Seul un grand homme roux resta quelques instants en équilibre sur une aile à marteler le pare-brise dans l’espoir insensé d’atteindre le visage du conducteur. Mais Untermeyer prit un virage sur les chapeaux de roues et l’homme fit une chute silencieuse sur la route où il resta immobile, face contre terre.
+La voiture oscilla, pencha sur le côté, puis disparut enfin à la vue derrière une rangée d’immeubles écroulés. Le bruit des pneus surchauffés se perdit dans le lointain. Charlotte et Untermeyer étaient sur le chemin de Pittsburg et de la sécurité.
+Fergesson resta là, les bras ballants, jusqu’à ce que la pression de la main osseuse de Dawes sur son épaule le sorte de sa <span style="background-color: #ffff66; color: black;">léthargie</span>.
+<blockquote>— Eh bien, murmura-t-il. C’est ainsi qu’on perd une voiture. Enfin, au moins Charlotte est-elle saine et sauve.</blockquote>
+<blockquote>— Venez, souffla Dawes dans son oreille. J’espère que vous avez de bons souliers. Un long chemin nous attend.</blockquote>
+Fergesson fronça les sourcils.
+<blockquote>— Un long chemin ? Pour où ?</blockquote>
+<blockquote>— Le plus proche de nos campements est à cinquante kilomètres d’ici. Je pense que nous pouvons y arriver. (Il s’éloigna et Fergesson le suivit un moment après.) Je l’ai déjà fait, je peux le refaire.</blockquote>
+Derrière eux, la foule se reformait, concentrant maintenant son attention sur la forme moribonde de Biltong. Elle bourdonnait comme un essaim d’abeilles en colère. La frustration, l’impuissance, la perte de la voiture se conjuguaient pour produire une cacophonie de violence grandissante. Peu à peu, montant comme l’eau sur le feu, la masse bouillonnante s’approcha de la plate-forme.
+Là-bas le vieux Biltong attendait, sans défense. Il les avait aperçus. Ses pseudopodes se tordaient en un dernier geste épuisé, dans un frémissement final, un effort ultime.
+C’est alors que Fergesson vit une chose abominable, un spectacle qui provoqua en lui la honte, au point que ses doigts humiliés lâchèrent la boîte métallique qui s’écrasa sur le sol. Il la ramassa, les sens engourdis, et la serra désespérément contre lui. Il voulait se sauver en courant sans plus regarder, n’importe où sauf en ce lieu terrible. Dans le silence et les ténèbres, au pays des ombres éternelles, loin de la colonie. En plein centre de la mort cendreuse.
+Car le Biltong essayait de se construire un rideau défensif, un mur protecteur de cendre durcie très peu efficace devant la populace déchaînée.
+
+Ils avaient marché deux heures, lorsque Dawes s’arrêta pour se laisser tomber sur l’étendue noire qui clôturait l’univers.
+<blockquote>— Nous allons nous reposer un moment, fit-il dans un grognement. J’ai un peu de nourriture que nous pouvons faire cuire. Si votre beau briquet a encore du gaz, nous l’utiliserons.</blockquote>
+Fergesson ouvrit la boîte protectrice et lui passa le briquet relique. Un vent froid et nauséabond soufflait sur la plaine de cendre, la soulevant en nuages lugubres qui dansaient le triomphe de la mort sur la surface dénudée de la planète. Au loin, quelques bâtisses en ruine se découpaient sur le ciel comme les restes d’un grand squelette ensablé. Ici et là poussaient des plaques d’herbes folles à moitié desséchées, aussi sinistres que l’environnement.
+<blockquote>— Tout n’est pas aussi mort qu’il y paraît, remarqua Dawes en ramassant des morceaux de papier et de bois sec qui traînaient dans la cendre. Vous avez remarqué les chiens et les lapins. Mais il y a aussi beaucoup de graines réservées qui n’attendent que la pluie ; on n’a qu’à arroser la cendre pour les voir apparaître bientôt.</blockquote>
+<blockquote>— De l’eau ? Mais il ne… pleut plus. Si tel était bien le verbe.</blockquote>
+<blockquote>— Il faut creuser des rigoles, des puits. L’eau existe toujours, mais il faut aller la chercher là où elle est. Dawes parvint à allumer un maigre feu — le briquet restait encore bon. Il prêta toute son attention à l’alimentation de la flamme, abandonnant son compagnon au silence.</blockquote>
+Fergesson s’assit, prit le briquet et le tourna dans tous les sens.	·
+<blockquote>— Comment fabriquer une chose pareille ? demanda-t-il brusquement.</blockquote>
+<blockquote>— C’est impossible.</blockquote>
+Dawes chercha dans sa veste et en sortit un paquet aplati de nourriture : de la viande séchée et salée, ainsi que des céréales grillées.
+<blockquote>— On ne peut pas commencer par le plus difficile. Le chemin doit se faire lentement et en partant du plus bas.</blockquote>
+<blockquote>— Un Biltong en bonne santé se jouerait d’une copie comme celle-là. Le nôtre, à Pittsburg, ferait une reproduction parfaite de ce briquet.</blockquote>
+<blockquote>— Je le sais, répondit Dawes. C’est ce qui nous arrêtait. Nous devions attendre jusqu’à ce qu’ils abandonnent. Et cela se fera avant longtemps. Ils devront se résoudre à rentrer dans leur propre système solaire. C’est un véritable génocide pour eux de rester sur Terre.</blockquote>
+Fergesson serra convulsivement le briquet.
+<blockquote>— Alors, notre civilisation s’écroulera avec leur départ.</blockquote>
+<blockquote>— Ce briquet (Dawes eut un sourire grimaçant.) C’est vrai, il est condamné à disparaître — tout au moins pendant longtemps. Mais je ne crois pas que vous ayiez compris. Nous devrons nous rééduquer, revoir notre conception des choses tous autant que nous sommes. Et pour moi aussi c’est très difficile.</blockquote>
+<blockquote>— D’où venez-vous ? Dawes répondit doucement.</blockquote>
+<blockquote>— Je suis un des survivants de la catastrophe de Chicago. Après que la colonie fut retournée à la cendre, j’ai erré dans le désert, j’ai tué à coups de pierres, dormi dans des caves, combattu les chiens à mains nues. Et puis un jour, j’ai trouvé la route d’un des campements. La <span style="background-color: #ffff66; color: black;">survie</span> s’était déjà bien organisée avant mon arrivée. Car vous ne le savez pas, mon ami, mais Chicago n’a pas été le premier à tomber.</blockquote>
+<blockquote>— Et vous imprimez des outils, comme ce couteau ? Dawes se mit à rire haut et clair dans le soir.</blockquote>
+<blockquote>— Le mot n’est pas « imprimer », mais fabriquer. Nous fabriquons des outils, nous faisons des objets. (Il sortit la coupe de forme irrégulière et fa posa sur la cendre.) Imprimer veut dire simplement copier. Je ne peux vous expliquer exactement ce qu’est fabriquer ; vous devrez le découvrir par vous-même. Ce sont deux actes totalement différents.</blockquote>
+Dawes disposa trois objets sur le sol. L’extraordinaire cristal Steuben, sa propre coupe grossière et la choses dégradée, la copie sabotée du Biltong agonisant.
+<blockquote>— Voici le passé, sa gloire lumineuse, fit-il en montrant le Steuben. Un jour, nous le retrouverons tel qu’en lui-même il a disparu… Nous allons dans la bonne direction — par le plus dur chemin, pas à pas — jusqu’à ce que nous soyons sortis de la fosse commune. (Il replaça avec précaution le cristal dans son étui protecteur.) Nous le garderons — pas pour le copier, mais comme modèle, comme objectif à atteindre. Vous ne pouvez percevoir la différence aujourd’hui, mais elle existe. (Il montra le récipient en bois.) C’est l’état de notre technique à ce jour. Ne vous moquez pas. Ne dites pas que cet objet n’est pas digne de notre civilisation. Il existe — simple et grossier, mais réel. Vous pouvez le tenir, il ne tombera pas en cendres. Nous gravirons les degrés à partir de cela.</blockquote>
+Il prit la copie informe du Biltong. Après un moment de réflexion, il la souleva pour la lancer au loin. La chose frappa la cendre, rebondit une fois, puis éclata en fragments minuscules.
+<blockquote>— C’est moins que rien, fit-il d’une voix rageuse.</blockquote>
+Mieux vaut cette coupe. Elle sera toujours plus proche du cristal Steuben que la plus belle copie.
+<blockquote>— Vous êtes certainement fier de votre petit gobelet, observa Fergesson.</blockquote>
+<blockquote>— C’est vrai, acquiesça Dawes en plaçant son œuvre dans la boîte de métal à côté de la pièce de musée. Vous me comprendrez un jour. Ça prendra un moment, mais vous y parviendrez.</blockquote>
+Il s’apprêta à refermer le coffre, puis s’arrêta pour effleurer le briquet.
+Il secoua la tête, l’air triste.
+<blockquote>— Nous n’en verrons plus pendant ce temps qu’il nous reste à vivre, fit-il en abaissant le couvercle. Nous avons trop de progrès à accomplir, trop de degrés franchir.</blockquote>
+Son visage maigre fut soudain éclairé d’une lumière intérieure, d’un jaillissement d’attente joyeuse.
+<blockquote>— Mais, Bon Dieu, nous avançons dans la bonne <span style="background-color: #ffff66; color: black;">direction</span> !</blockquote>
+</p></section>
+<br>
+
+<p class="foot"><em>Pay for the Printer (1956)
+Traduction de Marcel Thaon
+—
+Extrait de l’ouvrage La Planète impossible, <br>Philip K. Dick, Presses Pocket, Paris, 1979</em></p>
+<div class="footer"><a href="credits.pdf"><p ><em>Collection numérique réalisée par Valentin Dewez  <u> © Crédits</u></em></p></a></div>
+</section>
+
+<!---CURSORS--->
+  <div class='your-cursor1'></div>
+  <div class='follow1'></div>
+
+<style>
+  body {
+    min-font-size: 16px;
+  }
+  p, li, dd {
+  	kerning-pairs: az 0.02em;
+    rag-adjust: small-words;
+    widow-adjust: padding-right;
+
+  }
+</style>
+<script src="./jquery-1.10.2.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="./js/addthishit.js"></script>
+<script src="./jquery-1.10.2.js"></script>
+  <script src="./jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="./js/aos.js" type="text/javascript"></script>
+<script src="./js/type.js" type="text/javascript"></script>
+<script src="./js/cursor.js" type="text/javascript"></script>
+<script src="./js/nav.js" type="text/javascript"></script>
+<script src="./js/moove.js" type="text/javascript"></script>
+<script src="./js/highlight.js" type="text/javascript"></script>
+  <script src="./js/html5audio.js" type="text/javascript"></script>
+   <script src="./js/draggable.js" type="text/javascript"></script>
+  <script src="./js/dark.js" type="text/javascript"></script>
+  <script src="./js/add.js" type="text/javascript"></script>
+  <script src="./js/delete.js" type="text/javascript"></script>
+  <script>
+  AOS.init({
+
+    duration: 2500,
+     }
+
+
+    );
+</script>
+</body>
+</html>
