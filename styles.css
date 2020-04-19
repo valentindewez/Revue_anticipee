@@ -1,46 +1,6 @@
 @font-face { font-family: Sporting Grotesk; font-weight: bold; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Bold.otf');}
 @font-face { font-family: Sporting Grotesk; font-weight: normal; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Regular.otf');}
 
-/*Tooltip*/
-
-.tooltip
-{
-  text-decoration:none;
-  position:relative;
-  background-color: #ffff66; color: black;
-}
- 
- 
-.tooltip span
-{
-  display:none;
- 
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  color:black;
-  background:white; 
-}
- 
- 
- 
- 
-.tooltip:hover span
-{
-  display:block;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:1000;
-  width:auto;
-  border:1px solid black;
-  overflow:auto;
-  padding:0.5em;
-}
-
-
-
-
 /*postit*/
 
 #delete{
@@ -67,7 +27,7 @@ margin-left: 20em;
   height: 20em;
 width: 20em;
 cursor: text;
-
+overflow: auto:
  
 }
 
