@@ -1,5 +1,5 @@
-@font-face { font-family: Sporting Grotesk; font-weight: bold; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Bold.otf');}
-@font-face { font-family: Sporting Grotesk; font-weight: normal; src: url('../Revue_SF_2019/fonts/SportingGrotesque-Regular.otf');}
+@font-face { font-family: Sporting Grotesk; font-weight: bold; src: url('fonts/SportingGrotesque-Bold.otf');}
+@font-face { font-family: Sporting Grotesk; font-weight: normal; src: url('fonts/SportingGrotesque-Regular.otf');}
 
 /*postit*/
 
